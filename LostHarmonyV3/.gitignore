@@ -1,0 +1,83 @@
+# Este archivo .gitignore debe colocarse en la raíz de tu proyecto Unity
+# Basado en: https://github.com/github/gitignore/blob/main/Unity.gitignore
+
+### Carpetas generadas por Unity que no son necesarias para el funcionamiento del proyecto ###
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+.utmp/
+
+### Archivos de registro y caché ###
+*.log
+*.dwlt
+sysinfo.txt
+
+### Directorio caché de Visual Studio 2015/2017/2019 ###
+/.vs/
+/.vscode/
+/.idea/
+/.fleet/
+
+### Archivos de proyecto generados automáticamente por VS/MD/Consulo ###
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+### Archivos generados por Unity ###
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+### Informes de errores generados por Unity ###
+crashlytics-build.properties
+
+### Builds ###
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+### Carpeta de memoria caché de Asset Store ###
+/[Aa]ssets/[Aa]ssetStoreTools*
+
+### Archivos de paquetes de Auto-generados ###
+/[Aa]ssets/[Pp]ackages
+/[Aa]ssets/[Pp]ackages.meta
+
+### Lo que SÍ se debe incluir (lo que un proyecto en otra computadora necesita) ###
+# Assets folder (excepto los excluidos arriba)
+# ProjectSettings folder
+# Packages folder y Packages.json (para gestión de dependencias)
+
+# Descomenta estas líneas si no quieres subir ciertos archivos grandes 
+# (utiliza Git LFS para versionar archivos grandes si es necesario)
+# /[Aa]ssets/[Tt]extures/*.psd
+# /[Aa]ssets/[Mm]odels/*.fbx
+# /[Aa]ssets/[Ss]ounds/*.wav
+
+# Archivos temporales del sistema operativo
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
