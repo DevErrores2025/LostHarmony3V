@@ -1,0 +1,1686 @@
+fileFormatVersion: 2
+guid: d0a80390a17683742a0ab9cf0784e377
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3295658666779061466
+    second: Capa 3 (2)_0
+  - first:
+      213: 5449191514553496669
+    second: Capa 3 (2)_1
+  - first:
+      213: -2697794147336913246
+    second: Capa 3 (2)_2
+  - first:
+      213: 7879255537986450878
+    second: Capa 3 (2)_3
+  - first:
+      213: -422927054754017981
+    second: Capa 3 (2)_4
+  - first:
+      213: 5930168699864232839
+    second: Capa 3 (2)_5
+  - first:
+      213: 2787479101512656632
+    second: Capa 3 (2)_6
+  - first:
+      213: -8342433139622155100
+    second: Capa 3 (2)_7
+  - first:
+      213: -4699581779805170603
+    second: Capa 3 (2)_8
+  - first:
+      213: 2564225207099484920
+    second: Capa 3 (2)_9
+  - first:
+      213: 3236921777307719111
+    second: Capa 3 (2)_10
+  - first:
+      213: -1417077792353777625
+    second: Capa 3 (2)_11
+  - first:
+      213: 3673664360509325656
+    second: Capa 3 (2)_12
+  - first:
+      213: 66332450093301038
+    second: Capa 3 (2)_13
+  - first:
+      213: -7990681436828797173
+    second: Capa 3 (2)_14
+  - first:
+      213: -3475313803748583923
+    second: Capa 3 (2)_15
+  - first:
+      213: -3903212742745418404
+    second: Capa 3 (2)_16
+  - first:
+      213: -2182907754889924860
+    second: Capa 3 (2)_17
+  - first:
+      213: -8881408827136574307
+    second: Capa 3 (2)_18
+  - first:
+      213: 5670461938720838073
+    second: Capa 3 (2)_19
+  - first:
+      213: 7729158487815623603
+    second: Capa 3 (2)_20
+  - first:
+      213: -5054685278539905873
+    second: Capa 3 (2)_21
+  - first:
+      213: -4033776482618001682
+    second: Capa 3 (2)_22
+  - first:
+      213: 9161827125728476446
+    second: Capa 3 (2)_23
+  - first:
+      213: -9118395294476417401
+    second: Capa 3 (2)_24
+  - first:
+      213: -2309357559521836398
+    second: Capa 3 (2)_25
+  - first:
+      213: -185178516362533830
+    second: Capa 3 (2)_26
+  - first:
+      213: -8235372082004924995
+    second: Capa 3 (2)_27
+  - first:
+      213: -7191899412722050018
+    second: Capa 3 (2)_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Capa 3 (2)_0
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1008
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcad46a8188cbd20800000000000000
+      internalID: 3295658666779061466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_1
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1036
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54b80abfca6f9b40800000000000000
+      internalID: 5449191514553496669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 1021
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aefada34828f8ad0800000000000000
+      internalID: -2697794147336913246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_3
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1032
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5363c6a2db85d60800000000000000
+      internalID: 7879255537986450878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1026
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d0c7f9516712af0800000000000000
+      internalID: -422927054754017981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_5
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 1015
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7833c8d53013c4250800000000000000
+      internalID: 5930168699864232839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_6
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 1026
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6ac70697d1fa620800000000000000
+      internalID: 2787479101512656632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_7
+      rect:
+        serializedVersion: 2
+        x: 4060
+        y: 1026
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acef567249b93c80800000000000000
+      internalID: -8342433139622155100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_8
+      rect:
+        serializedVersion: 2
+        x: 4743
+        y: 1032
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55490dd454bb7ceb0800000000000000
+      internalID: -4699581779805170603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 991
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa64417d35f59320800000000000000
+      internalID: 2564225207099484920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 980
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5172ed43bdbec20800000000000000
+      internalID: 3236921777307719111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_11
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 955
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72888af7147855ce0800000000000000
+      internalID: -1417077792353777625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_12
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 988
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851cb20a54a7bf230800000000000000
+      internalID: 3673664360509325656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_13
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 978
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d74ec0309abe000800000000000000
+      internalID: 66332450093301038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_14
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 978
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07f284d1956b1190800000000000000
+      internalID: -7990681436828797173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_15
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 989
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06dd8c228435cfc0800000000000000
+      internalID: -3475313803748583923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_16
+      rect:
+        serializedVersion: 2
+        x: 4534
+        y: 969
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5591e9c0b005d9c0800000000000000
+      internalID: -3903212742745418404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_17
+      rect:
+        serializedVersion: 2
+        x: 4978
+        y: 963
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f275466f0c4b1e0800000000000000
+      internalID: -2182907754889924860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 955
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c71893ab5eeb480800000000000000
+      internalID: -8881408827136574307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_19
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 925
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b114d1071781be40800000000000000
+      internalID: 5670461938720838073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_20
+      rect:
+        serializedVersion: 2
+        x: 3920
+        y: 952
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b312fe91bc734b60800000000000000
+      internalID: 7729158487815623603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_21
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 909
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa48b3125862ad9b0800000000000000
+      internalID: -5054685278539905873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_22
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 945
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6ba3239a52508c0800000000000000
+      internalID: -4033776482618001682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 5198
+        height: 924
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d759aba39552f70800000000000000
+      internalID: 9161827125728476446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_24
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 895
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786c32f7ac3f47180800000000000000
+      internalID: -9118395294476417401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_25
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 895
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292865df88383ffd0800000000000000
+      internalID: -2309357559521836398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_26
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 895
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a346d28de1d1e6df0800000000000000
+      internalID: -185178516362533830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_27
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 908
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db56dea69b416bd80800000000000000
+      internalID: -8235372082004924995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_28
+      rect:
+        serializedVersion: 2
+        x: 3701
+        y: 895
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c9c54a69d313c90800000000000000
+      internalID: -7191899412722050018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_29
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1006
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10eaff3b65cbf842bcff525ab3ffb39
+      internalID: -1871753662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_30
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1006
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3ad15dd9fc4bc42a5a3bc1d8505ef3
+      internalID: 544712000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_31
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1006
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2caf9aeb5556534bb9988bf716d985c
+      internalID: 1046552516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_32
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1006
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f6e412e5c2f14bbb3fed115e13f92
+      internalID: 1409439694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_33
+      rect:
+        serializedVersion: 2
+        x: 3904
+        y: 1006
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a543f678c4ba4340bf8d90261b2dfa7
+      internalID: -1548345737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 942
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370d3eefbd8ed9c4b997eaf875c630c9
+      internalID: -1665169652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2)_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 942
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9630addfbbd6f124f9154b51c8923dbd
+      internalID: -660612743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -1832.498, y: 499.50238}
+      - {x: -1832.498, y: 527.3934}
+      - {x: -1840.1123, y: 535}
+      - {x: -1875.6455, y: 535}
+      - {x: -1878.1836, y: 527.3934}
+      - {x: -1878.1836, y: 504.57346}
+      - {x: -1870.5693, y: 494.43127}
+      - {x: -1845.1885, y: 494.43127}
+    - - {x: -487.3125, y: 496.96683}
+      - {x: -487.3125, y: 527.3934}
+      - {x: -489.8506, y: 535}
+      - {x: -527.9219, y: 535}
+      - {x: -530.45996, y: 529.9289}
+      - {x: -530.45996, y: 496.96683}
+      - {x: -517.76953, y: 491.89575}
+      - {x: -494.92676, y: 491.89575}
+    - - {x: 2180.2158, y: 494.43127}
+      - {x: 2182.754, y: 502.03793}
+      - {x: 2182.754, y: 524.85785}
+      - {x: 2177.6777, y: 535}
+      - {x: 2142.1445, y: 535}
+      - {x: 2137.0684, y: 529.9289}
+      - {x: 2137.0684, y: 504.57346}
+      - {x: 2144.6826, y: 491.89575}
+      - {x: 2175.1396, y: 491.89575}
+    - - {x: 979.7012, y: 489.3602}
+      - {x: 979.7012, y: 519.78674}
+      - {x: 967.01074, y: 532.4645}
+      - {x: 944.16797, y: 532.4645}
+      - {x: 934.0156, y: 519.78674}
+      - {x: 934.0156, y: 494.43127}
+      - {x: 944.16797, y: 484.2891}
+      - {x: 967.01074, y: 484.2891}
+    - - {x: 0, y: 494.43127}
+      - {x: 0, y: 522.32227}
+      - {x: -12.69043, y: 532.4645}
+      - {x: -27.918945, y: 532.4645}
+      - {x: -35.533203, y: 529.9289}
+      - {x: -45.685547, y: 522.32227}
+      - {x: -45.685547, y: 499.50238}
+      - {x: -40.609375, y: 484.2891}
+      - {x: -15.228516, y: 484.2891}
+    - - {x: 1500.0088, y: 491.89575}
+      - {x: 1500.0088, y: 519.78674}
+      - {x: 1489.8564, y: 532.4645}
+      - {x: 1459.3994, y: 532.4645}
+      - {x: 1454.3232, y: 522.32227}
+      - {x: 1454.3232, y: 486.82465}
+      - {x: 1456.8613, y: 484.2891}
+      - {x: 1487.3184, y: 484.2891}
+    - - {x: -1027.9248, y: 484.2891}
+      - {x: -1027.9248, y: 517.25116}
+      - {x: -1033.001, y: 527.3934}
+      - {x: -1055.8438, y: 527.3934}
+      - {x: -1071.0723, y: 519.78674}
+      - {x: -1071.0723, y: 489.3602}
+      - {x: -1065.9961, y: 479.21802}
+      - {x: -1038.0771, y: 479.21802}
+    - - {x: 350.25586, y: 481.75357}
+      - {x: 350.25586, y: 514.71564}
+      - {x: 335.02734, y: 522.32227}
+      - {x: 319.79883, y: 522.32227}
+      - {x: 307.1084, y: 512.1801}
+      - {x: 307.1084, y: 486.82465}
+      - {x: 312.18457, y: 474.1469}
+      - {x: 340.10352, y: 474.1469}
+    - - {x: -2035.5449, y: 474.1469}
+      - {x: -2035.5449, y: 507.109}
+      - {x: -2043.1592, y: 514.71564}
+      - {x: -2068.54, y: 514.71564}
+      - {x: -2081.2305, y: 509.64456}
+      - {x: -2081.2305, y: 476.68246}
+      - {x: -2073.6162, y: 466.54028}
+      - {x: -2048.2354, y: 466.54028}
+    - - {x: -2380.7246, y: 456.3981}
+      - {x: -2380.7246, y: 489.3602}
+      - {x: -2395.9531, y: 496.96683}
+      - {x: -2418.796, y: 496.96683}
+      - {x: -2423.872, y: 486.82465}
+      - {x: -2423.872, y: 458.93365}
+      - {x: -2416.2578, y: 448.79147}
+      - {x: -2393.415, y: 448.79147}
+    - - {x: 1170.0576, y: 461.4692}
+      - {x: 1170.0576, y: 479.21802}
+      - {x: 1167.5195, y: 484.2891}
+      - {x: 1159.9053, y: 494.43127}
+      - {x: 1139.6006, y: 494.43127}
+      - {x: 1126.9102, y: 491.89575}
+      - {x: 1124.3721, y: 484.2891}
+      - {x: 1124.3721, y: 461.4692}
+      - {x: 1131.9863, y: 451.32703}
+      - {x: 1139.6006, y: 448.79147}
+      - {x: 1157.3672, y: 448.79147}
+    - - {x: -1517.7754, y: 453.86255}
+      - {x: -1517.7754, y: 484.2891}
+      - {x: -1525.3896, y: 494.43127}
+      - {x: -1548.2324, y: 494.43127}
+      - {x: -1563.4609, y: 486.82465}
+      - {x: -1563.4609, y: 456.3981}
+      - {x: -1555.8467, y: 446.25592}
+      - {x: -1530.4658, y: 446.25592}
+    - - {x: -2238.5918, y: 443.7204}
+      - {x: -2238.5918, y: 474.1469}
+      - {x: -2243.668, y: 486.82465}
+      - {x: -2271.587, y: 486.82465}
+      - {x: -2284.2773, y: 471.6114}
+      - {x: -2284.2773, y: 443.7204}
+      - {x: -2274.125, y: 438.6493}
+      - {x: -2243.668, y: 438.6493}
+    - - {x: -309.64648, y: 443.7204}
+      - {x: -309.64648, y: 469.07584}
+      - {x: -314.72266, y: 484.2891}
+      - {x: -342.6416, y: 484.2891}
+      - {x: -350.25586, y: 479.21802}
+      - {x: -352.79395, y: 469.07584}
+      - {x: -352.79395, y: 443.7204}
+      - {x: -340.10352, y: 436.11374}
+      - {x: -317.26074, y: 436.11374}
+    - - {x: 583.75977, y: 441.18484}
+      - {x: 586.29785, y: 448.79147}
+      - {x: 586.29785, y: 471.6114}
+      - {x: 576.1455, y: 484.2891}
+      - {x: 548.22656, y: 484.2891}
+      - {x: 540.6123, y: 471.6114}
+      - {x: 540.6123, y: 441.18484}
+      - {x: 550.76465, y: 436.11374}
+      - {x: 568.53125, y: 436.11374}
+    - - {x: 1972.0928, y: 438.6493}
+      - {x: 1972.0928, y: 469.07584}
+      - {x: 1959.4023, y: 474.1469}
+      - {x: 1939.0977, y: 474.1469}
+      - {x: 1928.9453, y: 461.4692}
+      - {x: 1928.9453, y: 438.6493}
+      - {x: 1941.6357, y: 428.5071}
+      - {x: 1967.0166, y: 428.5071}
+    - - {x: -1619.2988, y: 453.86255}
+      - {x: -1642.1416, y: 471.6114}
+      - {x: -1687.8271, y: 474.1469}
+      - {x: -1715.7461, y: 474.1469}
+      - {x: -1718.2842, y: 469.07584}
+      - {x: -1720.8223, y: 458.93365}
+      - {x: -1720.8223, y: 413.29385}
+      - {x: -1619.2988, y: 413.29385}
+    - - {x: 2416.2578, y: 431.04266}
+      - {x: 2416.2578, y: 469.07584}
+      - {x: 2375.6484, y: 469.07584}
+      - {x: 2373.1104, y: 458.93365}
+      - {x: 2373.1104, y: 428.5071}
+      - {x: 2385.8008, y: 420.90048}
+      - {x: 2408.6436, y: 420.90048}
+    - - {x: -1911.1787, y: 428.5071}
+      - {x: -1911.1787, y: 453.86255}
+      - {x: -1926.4072, y: 461.4692}
+      - {x: -1944.1738, y: 461.4692}
+      - {x: -1954.3262, y: 448.79147}
+      - {x: -1954.3262, y: 425.97156}
+      - {x: -1944.1738, y: 413.29385}
+      - {x: -1916.2549, y: 413.29385}
+    - - {x: 1357.876, y: 415.82938}
+      - {x: 1357.876, y: 443.7204}
+      - {x: 1355.3379, y: 458.93365}
+      - {x: 1327.419, y: 458.93365}
+      - {x: 1314.7285, y: 448.79147}
+      - {x: 1314.7285, y: 423.43604}
+      - {x: 1327.419, y: 410.7583}
+      - {x: 1347.7236, y: 410.7583}
+    - - {x: 1657.3701, y: 408.22275}
+      - {x: 1657.3701, y: 438.6493}
+      - {x: 1644.6797, y: 451.32703}
+      - {x: 1626.9131, y: 451.32703}
+      - {x: 1611.6846, y: 443.7204}
+      - {x: 1611.6846, y: 425.97156}
+      - {x: 1614.2227, y: 408.22275}
+      - {x: 1619.2988, y: 403.15167}
+      - {x: 1644.6797, y: 403.15167}
+    - - {x: -83.756836, y: 393.0095}
+      - {x: -83.756836, y: 418.36493}
+      - {x: -88.83301, y: 431.04266}
+      - {x: -119.29004, y: 431.04266}
+      - {x: -129.44238, y: 425.97156}
+      - {x: -129.44238, y: 390.47394}
+      - {x: -116.75195, y: 382.8673}
+      - {x: -93.90918, y: 382.8673}
+    - - {x: 1555.8467, y: 372.72513}
+      - {x: 1555.8467, y: 405.6872}
+      - {x: 1545.6943, y: 418.36493}
+      - {x: 1507.623, y: 428.5071}
+      - {x: 1454.3232, y: 428.5071}
+      - {x: 1454.3232, y: 367.65402}
+      - {x: 1543.1562, y: 367.65402}
+    - - {x: -444.16504, y: 357.51184}
+      - {x: -444.16504, y: 403.15167}
+      - {x: -477.16016, y: 415.82938}
+      - {x: -563.4551, y: 415.82938}
+      - {x: -581.2217, y: 390.47394}
+      - {x: -586.29785, y: 370.18958}
+      - {x: -586.29785, y: 342.29858}
+      - {x: -573.6074, y: 337.22748}
+      - {x: -527.9219, y: 337.22748}
+    - - {x: 1197.9766, y: 360.0474}
+      - {x: 1197.9766, y: 395.545}
+      - {x: 1192.9004, y: 410.7583}
+      - {x: 1109.1436, y: 415.82938}
+      - {x: 1096.4531, y: 415.82938}
+      - {x: 1096.4531, y: 354.97632}
+      - {x: 1192.9004, y: 354.97632}
+    - - {x: 827.416, y: 370.18958}
+      - {x: 829.9541, y: 375.26068}
+      - {x: 829.9541, y: 403.15167}
+      - {x: 819.80176, y: 413.29385}
+      - {x: 799.4971, y: 413.29385}
+      - {x: 786.80664, y: 410.7583}
+      - {x: 784.26855, y: 400.61612}
+      - {x: 784.26855, y: 380.33176}
+      - {x: 794.4209, y: 367.65402}
+      - {x: 817.2637, y: 367.65402}
+    - - {x: -1322.3428, y: 367.65402}
+      - {x: -1322.3428, y: 382.8673}
+      - {x: -1329.957, y: 398.08057}
+      - {x: -1332.4951, y: 400.61612}
+      - {x: -1362.9521, y: 400.61612}
+      - {x: -1368.0283, y: 387.9384}
+      - {x: -1368.0283, y: 362.58295}
+      - {x: -1360.4141, y: 354.97632}
+      - {x: -1332.4951, y: 354.97632}
+    - - {x: -2144.6826, y: 372.72513}
+      - {x: -2144.6826, y: 390.47394}
+      - {x: -2154.835, y: 400.61612}
+      - {x: -2175.1396, y: 400.61612}
+      - {x: -2190.3682, y: 398.08057}
+      - {x: -2190.3682, y: 365.1185}
+      - {x: -2180.2158, y: 354.97632}
+      - {x: -2152.2969, y: 354.97632}
+    - - {x: -2449.253, y: -73.53081}
+      - {x: -2413.7197, y: -43.104267}
+      - {x: -2411.1816, y: 141.99052}
+      - {x: -2446.7148, y: 190.16588}
+      - {x: -2482.248, y: 185.09479}
+      - {x: -2516.8032, y: 83.998634}
+      - {x: -2512.705, y: 103.957344}
+      - {x: -2492.4004, y: 316.94315}
+      - {x: -2535.5479, y: 395.545}
+      - {x: -2588.8477, y: 395.545}
+      - {x: -2591.3857, y: 393.0095}
+      - {x: -2599, y: 327.0853}
+      - {x: -2599, y: -535}
+      - {x: 2599, y: -535}
+      - {x: 2599, y: 283.98105}
+      - {x: 2591.3857, y: 393.0095}
+      - {x: 2505.0908, y: 357.51184}
+      - {x: 2260.097, y: 353.7131}
+      - {x: 2241.13, y: 354.97632}
+      - {x: 2180.2158, y: 354.97632}
+      - {x: 2180.2158, y: 352.4745}
+      - {x: 1819.5637, y: 346.8824}
+      - {x: 1819.8076, y: 347.36966}
+      - {x: 1819.8076, y: 375.26068}
+      - {x: 1809.6553, y: 385.40283}
+      - {x: 1789.3506, y: 385.40283}
+      - {x: 1776.6602, y: 382.8673}
+      - {x: 1774.1221, y: 372.72513}
+      - {x: 1774.1221, y: 352.44077}
+      - {x: 1779.0758, y: 346.2546}
+      - {x: 1360.4141, y: 339.76303}
+      - {x: 1337.5713, y: 337.22748}
+      - {x: 1314.7285, y: 294.12323}
+      - {x: 1304.5762, y: 268.76776}
+      - {x: 1304.5762, y: -129.31279}
+      - {x: 1170.0576, y: -126.77725}
+      - {x: 1033.001, y: -248.48341}
+      - {x: 1020.8182, y: -254.56871}
+      - {x: 1025.3867, y: -240.87679}
+      - {x: 1030.4629, y: -228.19905}
+      - {x: 1038.0771, y: -207.91469}
+      - {x: 1020.31055, y: -167.34598}
+      - {x: 946.70605, y: -182.55925}
+      - {x: 911.17285, y: -230.7346}
+      - {x: 916.249, y: -248.48341}
+      - {x: 939.0918, y: -273.83887}
+      - {x: 928.93945, y: -299.1943}
+      - {x: 928.93945, y: -322.01422}
+      - {x: 941.6299, y: -354.97632}
+      - {x: 926.40137, y: -319.47867}
+      - {x: 926.40137, y: -301.72986}
+      - {x: 913.71094, y: -281.4455}
+      - {x: 860.41113, y: -243.41232}
+      - {x: 774.1162, y: -309.3365}
+      - {x: 776.6543, y: -329.62085}
+      - {x: 799.4971, y: -360.0474}
+      - {x: 781.73047, y: -347.36966}
+      - {x: 746.19727, y: -332.1564}
+      - {x: 454.31738, y: -332.1564}
+      - {x: 236.04199, y: -349.9052}
+      - {x: 182.74219, y: -372.72513}
+      - {x: 210.66113, y: -253.5545}
+      - {x: 53.299805, y: -109.028435}
+      - {x: -35.533203, y: -182.55925}
+      - {x: -63.45215, y: -258.62558}
+      - {x: -40.609375, y: -301.72986}
+      - {x: -20.304688, y: -304.2654}
+      - {x: 7.614258, y: -306.80096}
+      - {x: -48.223633, y: -309.3365}
+      - {x: -403.55566, y: -164.81042}
+      - {x: -431.4746, y: -169.88152}
+      - {x: -439.08887, y: -172.41707}
+      - {x: -388.32715, y: -144.52606}
+      - {x: -378.1748, y: -91.279625}
+      - {x: -373.09863, y: 78.6019}
+      - {x: -494.92676, y: 98.88625}
+      - {x: -565.99316, y: -35.49763}
+      - {x: -687.8213, y: -131.84834}
+      - {x: -743.6592, y: -187.63034}
+      - {x: -659.90234, y: -83.67299}
+      - {x: -692.89746, y: 144.52606}
+      - {x: -741.1211, y: 294.12323}
+      - {x: -870.5635, y: 167.34598}
+      - {x: -840.10645, y: 91.279625}
+      - {x: -814.7256, y: 55.78199}
+      - {x: -814.7256, y: 35.49763}
+      - {x: -817.2637, y: 45.639812}
+      - {x: -824.8779, y: 60.85308}
+      - {x: -842.64453, y: 65.92417}
+      - {x: -855.33496, y: 114.099525}
+      - {x: -870.5635, y: 131.84834}
+      - {x: -911.17285, y: 119.170616}
+      - {x: -918.7871, y: 86.208534}
+      - {x: -939.0918, y: 15.21327}
+      - {x: -913.71094, y: -58.317535}
+      - {x: -840.10645, y: -73.53081}
+      - {x: -822.33984, y: -111.56398}
+      - {x: -819.80176, y: -124.24171}
+      - {x: -822.33984, y: -116.63507}
+      - {x: -827.416, y: -106.49289}
+      - {x: -832.4922, y: -101.4218}
+      - {x: -880.7158, y: -78.6019}
+      - {x: -895.94434, y: -83.67299}
+      - {x: -903.5586, y: -93.81517}
+      - {x: -906.0967, y: -101.4218}
+      - {x: -908.63477, y: -121.70616}
+      - {x: -895.94434, y: -149.59715}
+      - {x: -880.7158, y: -164.81042}
+      - {x: -855.33496, y: -187.63034}
+      - {x: -941.6299, y: -235.8057}
+      - {x: -949.24414, y: -245.94788}
+      - {x: -954.3203, y: -258.62558}
+      - {x: -954.3203, y: -245.94788}
+      - {x: -906.0967, y: -205.37915}
+      - {x: -890.86816, y: -187.63034}
+      - {x: -906.0967, y: -152.1327}
+      - {x: -913.71094, y: -114.099525}
+      - {x: -951.7822, y: -88.74408}
+      - {x: -967.01074, y: -106.49289}
+      - {x: -944.16797, y: -73.53081}
+      - {x: -941.6299, y: -43.104267}
+      - {x: -961.9346, y: -22.819906}
+      - {x: -977.1631, y: -22.819906}
+      - {x: -982.23926, y: -27.890995}
+      - {x: -987.3154, y: -43.104267}
+      - {x: -987.3154, y: -35.49763}
+      - {x: -984.77734, y: -32.962086}
+      - {x: -984.77734, y: 2.535545}
+      - {x: -987.3154, y: 10.14218}
+      - {x: -1000.00586, y: 22.819906}
+      - {x: -1030.4629, y: 17.748816}
+      - {x: -1088.8389, y: -58.317535}
+      - {x: -1093.915, y: -144.52606}
+      - {x: -1055.8438, y: -263.6967}
+      - {x: -1050.7676, y: -276.37442}
+      - {x: -1012.6963, y: -314.4076}
+      - {x: -1055.8438, y: -273.83887}
+      - {x: -1060.9199, y: -253.5545}
+      - {x: -1071.0723, y: -245.94788}
+      - {x: -1081.2246, y: -243.41232}
+      - {x: -1091.377, y: -245.94788}
+      - {x: -1101.5293, y: -256.09006}
+      - {x: -1106.6055, y: -268.76776}
+      - {x: -1091.377, y: -225.66351}
+      - {x: -1083.7627, y: -220.59242}
+      - {x: -1088.8389, y: -174.9526}
+      - {x: -1167.5195, y: -159.73933}
+      - {x: -1220.8193, y: -251.01897}
+      - {x: -1177.6719, y: -276.37442}
+      - {x: -1162.4434, y: -278.90994}
+      - {x: -1147.2148, y: -296.65878}
+      - {x: -1147.2148, y: -304.2654}
+      - {x: -1149.7529, y: -294.12323}
+      - {x: -1159.9053, y: -286.5166}
+      - {x: -1177.6719, y: -286.5166}
+      - {x: -1192.9004, y: -296.65878}
+      - {x: -1187.8242, y: -337.22748}
+      - {x: -1167.5195, y: -360.0474}
+      - {x: -1200.5146, y: -347.36966}
+      - {x: -1192.9004, y: -316.94315}
+      - {x: -1203.0527, y: -278.90994}
+      - {x: -1241.124, y: -253.5545}
+      - {x: -1271.581, y: -263.6967}
+      - {x: -1355.3379, y: -304.2654}
+      - {x: -1436.5566, y: -405.6872}
+      - {x: -1434.0186, y: -423.43604}
+      - {x: -1451.4865, y: -423.43604}
+      - {x: -1436.5566, y: -410.7583}
+      - {x: -1436.5566, y: -380.33176}
+      - {x: -1446.709, y: -372.72513}
+      - {x: -1461.9375, y: -370.18958}
+      - {x: -1469.5518, y: -372.72513}
+      - {x: -1469.5518, y: -370.18958}
+      - {x: -1434.0186, y: -365.1185}
+      - {x: -1406.0996, y: -342.29858}
+      - {x: -1370.5664, y: -296.65878}
+      - {x: -1520.3135, y: -164.81042}
+      - {x: -2337.5771, y: -258.62558}
+      - {x: -2408.6436, y: -301.72986}
+      - {x: -2406.1055, y: -316.94315}
+      - {x: -2408.6436, y: -314.4076}
+      - {x: -2408.6436, y: -261.16113}
+      - {x: -2385.8008, y: -205.37915}
+      - {x: -2383.2627, y: -192.70142}
+      - {x: -2408.6436, y: -83.67299}
+      - {x: -2449.253, y: -103.957344}
+    - - {x: -1098.9912, y: 337.22748}
+      - {x: -1098.9912, y: 377.7962}
+      - {x: -1101.5293, y: 387.9384}
+      - {x: -1139.6006, y: 393.0095}
+      - {x: -1197.9766, y: 393.0095}
+      - {x: -1200.5146, y: 390.47394}
+      - {x: -1200.5146, y: 329.62085}
+      - {x: -1106.6055, y: 329.62085}
+    - - {x: 510.15527, y: 342.29858}
+      - {x: 510.15527, y: 372.72513}
+      - {x: 500.00293, y: 387.9384}
+      - {x: 479.69824, y: 390.47394}
+      - {x: 418.78418, y: 390.47394}
+      - {x: 411.16992, y: 382.8673}
+      - {x: 408.63184, y: 375.26068}
+      - {x: 408.63184, y: 329.62085}
+      - {x: 505.0791, y: 329.62085}
+    - - {x: 205.58496, y: 349.9052}
+      - {x: 205.58496, y: 385.40283}
+      - {x: 197.9707, y: 387.9384}
+      - {x: 164.97559, y: 387.9384}
+      - {x: 162.4375, y: 375.26068}
+      - {x: 162.4375, y: 349.9052}
+      - {x: 170.05176, y: 342.29858}
+      - {x: 195.43262, y: 342.29858}
+    - - {x: -928.93945, y: 344.83414}
+      - {x: -928.93945, y: 372.72513}
+      - {x: -936.5537, y: 377.7962}
+      - {x: -967.01074, y: 377.7962}
+      - {x: -972.0869, y: 367.65402}
+      - {x: -972.0869, y: 337.22748}
+      - {x: -961.9346, y: 329.62085}
+      - {x: -939.0918, y: 329.62085}
+    - - {x: -2434.0244, y: 324.54977}
+      - {x: -2434.0244, y: 362.58295}
+      - {x: -2441.6387, y: 365.1185}
+      - {x: -2472.0957, y: 365.1185}
+      - {x: -2477.1719, y: 349.9052}
+      - {x: -2477.1719, y: 327.0853}
+      - {x: -2472.0957, y: 319.47867}
+      - {x: -2446.7148, y: 319.47867}
+    - - {x: -1591.3799, y: 316.94315}
+      - {x: -1591.3799, y: 352.44077}
+      - {x: -1596.456, y: 360.0474}
+      - {x: -1621.8369, y: 360.0474}
+      - {x: -1634.5273, y: 354.97632}
+      - {x: -1634.5273, y: 322.01422}
+      - {x: -1629.4512, y: 314.4076}
+      - {x: -1601.5322, y: 314.4076}
+    - - {x: -2220.8252, y: 299.1943}
+      - {x: -2246.206, y: 332.1564}
+      - {x: -2263.9727, y: 344.83414}
+      - {x: -2281.7393, y: 344.83414}
+      - {x: -2296.9678, y: 339.76303}
+      - {x: -2322.3486, y: 304.2654}
+      - {x: -2322.3486, y: 256.09006}
+      - {x: -2319.8105, y: 248.48341}
+      - {x: -2220.8252, y: 248.48341}
+    - - {x: -1911.1787, y: 268.76776}
+      - {x: -1911.1787, y: 301.72986}
+      - {x: -1921.331, y: 304.2654}
+      - {x: -1949.25, y: 304.2654}
+      - {x: -1954.3262, y: 291.58768}
+      - {x: -1954.3262, y: 263.6967}
+      - {x: -1946.7119, y: 258.62558}
+      - {x: -1913.7168, y: 258.62558}
+    - - {x: -1720.8223, y: 251.01897}
+      - {x: -1720.8223, y: 286.5166}
+      - {x: -1725.8984, y: 289.05212}
+      - {x: -1756.3555, y: 289.05212}
+      - {x: -1763.9697, y: 278.90994}
+      - {x: -1763.9697, y: 256.09006}
+      - {x: -1761.4316, y: 240.87679}
+      - {x: -1725.8984, y: 240.87679}
+    - - {x: 1225.8955, y: 248.48341}
+      - {x: 1225.8955, y: 276.37442}
+      - {x: 1213.2051, y: 281.4455}
+      - {x: 1187.8242, y: 281.4455}
+      - {x: 1182.748, y: 271.3033}
+      - {x: 1182.748, y: 238.34123}
+      - {x: 1195.4385, y: 235.8057}
+      - {x: 1218.2812, y: 235.8057}
+    - - {x: -393.40332, y: 230.7346}
+      - {x: -393.40332, y: 258.62558}
+      - {x: -406.09375, y: 271.3033}
+      - {x: -431.4746, y: 271.3033}
+      - {x: -439.08887, y: 258.62558}
+      - {x: -439.08887, y: 228.19905}
+      - {x: -434.0127, y: 223.12796}
+      - {x: -406.09375, y: 223.12796}
+    - - {x: -1038.0771, y: 235.8057}
+      - {x: -1038.0771, y: 266.23224}
+      - {x: -1048.2295, y: 271.3033}
+      - {x: -1078.6865, y: 271.3033}
+      - {x: -1081.2246, y: 266.23224}
+      - {x: -1081.2246, y: 230.7346}
+      - {x: -1071.0723, y: 223.12796}
+      - {x: -1048.2295, y: 223.12796}
+    - - {x: 114.21387, y: 195.23697}
+      - {x: 114.21387, y: 245.94788}
+      - {x: 83.756836, y: 256.09006}
+      - {x: 12.69043, y: 256.09006}
+      - {x: 12.69043, y: 192.70142}
+      - {x: 104.06152, y: 192.70142}
+    - - {x: -55.83789, y: 220.59242}
+      - {x: -55.83789, y: 248.48341}
+      - {x: -65.990234, y: 253.5545}
+      - {x: -91.37109, y: 253.5545}
+      - {x: -96.447266, y: 245.94788}
+      - {x: -98.98535, y: 238.34123}
+      - {x: -98.98535, y: 218.05687}
+      - {x: -88.83301, y: 207.91469}
+      - {x: -68.52832, y: 207.91469}
+    - - {x: 413.708, y: 202.8436}
+      - {x: 413.708, y: 233.27014}
+      - {x: 406.09375, y: 245.94788}
+      - {x: 375.63672, y: 245.94788}
+      - {x: 368.02246, y: 230.7346}
+      - {x: 368.02246, y: 202.8436}
+      - {x: 373.09863, y: 197.7725}
+      - {x: 406.09375, y: 197.7725}
+    - - {x: -1992.3975, y: 172.41707}
+      - {x: -2025.3926, y: 177.48816}
+      - {x: -2091.3828, y: 177.48816}
+      - {x: -2093.921, y: 167.34598}
+      - {x: -2093.921, y: 116.63507}
+      - {x: -1992.3975, y: 116.63507}
+    - - {x: -324.875, y: 116.63507}
+      - {x: -324.875, y: 144.52606}
+      - {x: -335.02734, y: 149.59715}
+      - {x: -360.4082, y: 149.59715}
+      - {x: -365.48438, y: 141.99052}
+      - {x: -368.02246, y: 134.38388}
+      - {x: -368.02246, y: 114.099525}
+      - {x: -357.87012, y: 103.957344}
+      - {x: -337.56543, y: 103.957344}
+    - - {x: 380.7129, y: 76.06635}
+      - {x: 380.7129, y: 111.56398}
+      - {x: 373.09863, y: 126.77725}
+      - {x: 279.18945, y: 126.77725}
+      - {x: 279.18945, y: 65.92417}
+      - {x: 378.1748, y: 65.92417}
+    - - {x: 210.66113, y: 78.6019}
+      - {x: 210.66113, y: 101.4218}
+      - {x: 208.12305, y: 116.63507}
+      - {x: 172.58984, y: 116.63507}
+      - {x: 167.51367, y: 111.56398}
+      - {x: 167.51367, y: 83.67299}
+      - {x: 172.58984, y: 70.99526}
+      - {x: 197.9707, y: 70.99526}
+    - - {x: -1832.498, y: 43.104267}
+      - {x: -1832.498, y: 73.53081}
+      - {x: -1840.1123, y: 83.67299}
+      - {x: -1865.4932, y: 83.67299}
+      - {x: -1878.1836, y: 76.06635}
+      - {x: -1878.1836, y: 45.639812}
+      - {x: -1870.5693, y: 35.49763}
+      - {x: -1847.7266, y: 35.49763}
+    - - {x: -2530.4717, y: -81.13744}
+      - {x: -2527.9336, y: -68.45972}
+      - {x: -2522.8574, y: -58.317535}
+      - {x: -2520.3193, y: -48.175354}
+      - {x: -2517.7812, y: -32.962086}
+      - {x: -2533.0098, y: 5.07109}
+      - {x: -2517.6804, y: 79.726944}
+      - {x: -2510.167, y: -25.35545}
+      - {x: -2525.3955, y: -65.92417}
+      - {x: -2527.9336, y: -78.6019}
+      - {x: -2527.9336, y: -103.957344}
+      - {x: -2525.3955, y: -119.170616}
+      - {x: -2522.8574, y: -126.77725}
+      - {x: -2548.2383, y: -162.27489}
+    - - {x: -763.96387, y: -10.14218}
+      - {x: -761.4258, y: -7.606635}
+      - {x: -748.73535, y: 10.14218}
+      - {x: -748.73535, y: 12.677725}
+      - {x: -746.19727, y: 15.21327}
+      - {x: -746.19727, y: 12.677725}
+      - {x: -743.6592, y: -5.07109}
+      - {x: -753.8115, y: -5.07109}
+      - {x: -763.96387, y: -13.184827}
+    - - {x: 1401.0234, y: -38.033176}
+      - {x: 1401.0234, y: -45.639812}
+      - {x: 1403.5615, y: -50.7109}
+      - {x: 1401.0234, y: -53.246445}
+      - {x: 1398.4854, y: -65.92417}
+      - {x: 1398.4854, y: -35.49763}
+    - - {x: -771.5781, y: -76.06635}
+      - {x: -769.04004, y: -73.53081}
+      - {x: -766.50195, y: -48.175354}
+      - {x: -766.50195, y: -55.78199}
+      - {x: -761.4258, y: -93.81517}
+      - {x: -763.96387, y: -96.35071}
+      - {x: -763.96387, y: -106.49289}
+    - - {x: 68.52832, y: -245.94788}
+      - {x: 81.21875, y: -225.66351}
+      - {x: 73.60449, y: -273.83887}
+      - {x: 68.52832, y: -277.21957}
+    - - {x: -2461.9434, y: -233.69275}
+      - {x: -2461.9434, y: -235.8057}
+      - {x: -2463.5295, y: -236.59805}
+    - - {x: -2477.1719, y: -251.01897}
+      - {x: -2468.7117, y: -242.56715}
+      - {x: -2472.0957, y: -251.01897}
+      - {x: -2477.1719, y: -261.16113}
+    - - {x: -1533.0039, y: -334.69196}
+      - {x: -1533.0039, y: -324.54977}
+      - {x: -1535.542, y: -299.1943}
+      - {x: -1538.0801, y: -296.65878}
+      - {x: -1539.6028, y: -287.5308}
+      - {x: -1538.0801, y: -289.05212}
+      - {x: -1538.0801, y: -291.58768}
+      - {x: -1527.9277, y: -306.80096}
+      - {x: -1527.9277, y: -337.22748}
+      - {x: -1527.0818, y: -340.60822}
+    - - {x: -1289.3477, y: -425.97156}
+      - {x: -1289.3477, y: -420.0553}
+      - {x: -1284.2715, y: -428.5071}
+      - {x: -1287.3171, y: -430.02844}
+    - - {x: -1453.4773, y: -425.1264}
+      - {x: -1464.4756, y: -436.11374}
+      - {x: -1464.4756, y: -448.79147}
+      - {x: -1487.3184, y: -453.86255}
+    - - {x: -1571.0752, y: -441.18484}
+      - {x: -1583.7656, y: -428.5071}
+      - {x: -1576.1514, y: -433.57822}
+      - {x: -1567.0143, y: -441.18484}
+    - - {x: -2444.1768, y: -169.88152}
+      - {x: -2441.6387, y: -197.7725}
+      - {x: -2456.8672, y: -224.39574}
+      - {x: -2449.253, y: -210.45024}
+      - {x: -2446.7148, y: -190.16588}
+      - {x: -2446.7148, y: -162.27489}
+      - {x: -2449.253, y: -149.59715}
+      - {x: -2449.253, y: -144.52606}
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 92b8f59e327092a44b0e6b1f2e3166ec
+    internalID: -226972960
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Capa 3 (2)_0: 3295658666779061466
+      Capa 3 (2)_1: 5449191514553496669
+      Capa 3 (2)_10: 3236921777307719111
+      Capa 3 (2)_11: -1417077792353777625
+      Capa 3 (2)_12: 3673664360509325656
+      Capa 3 (2)_13: 66332450093301038
+      Capa 3 (2)_14: -7990681436828797173
+      Capa 3 (2)_15: -3475313803748583923
+      Capa 3 (2)_16: -3903212742745418404
+      Capa 3 (2)_17: -2182907754889924860
+      Capa 3 (2)_18: -8881408827136574307
+      Capa 3 (2)_19: 5670461938720838073
+      Capa 3 (2)_2: -2697794147336913246
+      Capa 3 (2)_20: 7729158487815623603
+      Capa 3 (2)_21: -5054685278539905873
+      Capa 3 (2)_22: -4033776482618001682
+      Capa 3 (2)_23: 9161827125728476446
+      Capa 3 (2)_24: -9118395294476417401
+      Capa 3 (2)_25: -2309357559521836398
+      Capa 3 (2)_26: -185178516362533830
+      Capa 3 (2)_27: -8235372082004924995
+      Capa 3 (2)_28: -7191899412722050018
+      Capa 3 (2)_29: -1871753662
+      Capa 3 (2)_3: 7879255537986450878
+      Capa 3 (2)_30: 544712000
+      Capa 3 (2)_31: 1046552516
+      Capa 3 (2)_32: 1409439694
+      Capa 3 (2)_33: -1548345737
+      Capa 3 (2)_34: -1665169652
+      Capa 3 (2)_35: -660612743
+      Capa 3 (2)_4: -422927054754017981
+      Capa 3 (2)_5: 5930168699864232839
+      Capa 3 (2)_6: 2787479101512656632
+      Capa 3 (2)_7: -8342433139622155100
+      Capa 3 (2)_8: -4699581779805170603
+      Capa 3 (2)_9: 2564225207099484920
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
