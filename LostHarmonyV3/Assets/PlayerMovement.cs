@@ -2,42 +2,69 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float jumpForce = 10f;
-    public Transform groundCheck;
-    public LayerMask groundLayer;
-    public float groundCheckRadius = 0.2f;
+    public float velocidadMovimiento = 5f;
+    public float fuerzaSalto = 12f;
+    public Transform verificadorSuelo;
+    public LayerMask capaSuelo;
+    public Animator animator;
+    public Rigidbody2D rb;
 
-    private Rigidbody2D rb;
-    private bool isGrounded;
-
-    void Start()
+    private bool enSuelo = false;
+    private float direccionMovimiento;
+    private bool mirandoDerecha = true;
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
     void Update()
     {
-        float moveInput = Input.GetAxisRaw("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
-
-        // Verificar si est� en el suelo
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        // Movimiento horizontal
+        direccionMovimiento = Input.GetAxisRaw("Horizontal");
+        rb.linearVelocity = new Vector2(direccionMovimiento * velocidadMovimiento, rb.linearVelocity.y);
 
         // Saltar
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        enSuelo = Physics2D.OverlapCircle(verificadorSuelo.position, 0.1f, capaSuelo);
+        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
+        }
+
+        // Animaciones
+        if (enSuelo)
+        {
+            if (direccionMovimiento != 0)
+            {
+                animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
+
+            }
+            else
+            {
+                animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
+
+            }
+        }
+        else
+        {
+            animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
+            // Se puede cambiar por una animación de salto si la tienes
+        }
+
+        // Flip (mirar en la dirección correcta)
+        if (direccionMovimiento > 0 && !mirandoDerecha)
+        {
+            Girar();
+        }
+        else if (direccionMovimiento < 0 && mirandoDerecha)
+        {
+            Girar();
         }
     }
 
-    void OnDrawGizmosSelected()
+    void Girar()
     {
-        // Dibuja el �rea del groundCheck
-        if (groundCheck != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-        }
+        mirandoDerecha = !mirandoDerecha;
+        Vector3 escala = transform.localScale;
+        escala.x *= -1;
+        transform.localScale = escala;
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc68e73481c74714388405d9c43ed81e
+guid: 768b765a9335cdd4b8aa141caba13a6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5928240013073876469
-    second: Nube1_0
+      213: 808474351147232415
+    second: Charco3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nube1_0
+      name: Charco3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4548
-        height: 209
+        width: 618
+        height: 404
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0a79750e19aabda0800000000000000
-      internalID: -5928240013073876469
+      spriteID: f9c252e8327483b00800000000000000
+      internalID: 808474351147232415
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Nube1_0: -5928240013073876469
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
