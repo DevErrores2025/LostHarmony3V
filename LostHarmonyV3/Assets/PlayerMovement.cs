@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,14 +8,17 @@ public class PlayerMovement : MonoBehaviour
     public Transform verificadorSuelo;
     public LayerMask capaSuelo;
     public Animator animator;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     private bool enSuelo = false;
     private float direccionMovimiento;
     private bool mirandoDerecha = true;
+
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
     void Update()
     {
