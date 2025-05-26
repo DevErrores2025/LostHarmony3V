@@ -2,7 +2,19 @@ using UnityEngine;
 
 public class EsbirroMovement : MonoBehaviour
 {
+    [Header("Configuración Movimiento")]
+    public float velocidadBase = 3f;
+    public float velocidadRotacion = 50f;
+
+    [Header("Configuración Patrón")]
+    public bool movimientoOndulante = true;
+    public float amplitudOndulacion = 1f;
+    public float frecuenciaOndulacion = 2f;
+
+    private float velocidadActual;
+    private bool vieneDelAbanico = false;
     private Vector2 moveDirection;
+    private Vector2 direccionMovimiento = Vector2.down;
     private float moveSpeed;
     private Camera mainCamera;
     private bool isActive = true;
@@ -48,5 +60,37 @@ public class EsbirroMovement : MonoBehaviour
     public void StopMovement()
     {
         isActive = false;
+    }
+
+    public void ConfigurarVelocidad(float nuevaVelocidad)
+    {
+        velocidadBase = nuevaVelocidad;
+        velocidadActual = nuevaVelocidad;
+    }
+    void ConfigurarMovimientoSegunOrigen()
+    {
+        if (vieneDelAbanico)
+        {
+            // Los esbirros del abanico se mueven directamente hacia abajo/jugador
+            direccionMovimiento = Vector2.down;
+            movimientoOndulante = false; // Movimiento más directo desde el abanico
+        }
+        else
+        {
+            // Los esbirros normales pueden tener movimiento ondulante
+            direccionMovimiento = Vector2.down;
+        }
+    }
+
+    public void ConfigurarOrigenAbanico(bool esDelAbanico)
+    {
+        vieneDelAbanico = esDelAbanico;
+        ConfigurarMovimientoSegunOrigen();
+
+        if (vieneDelAbanico)
+        {
+            // Los esbirros del abanico pueden ser ligeramente más rápidos
+            velocidadActual *= 1.2f;
+        }
     }
 }
