@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+
 
 public class SubmarinoController : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class SubmarinoController : MonoBehaviour
     public float distanciaLanzamiento = 1f;
     public float velocidadRed = 15f;
     public float rangoDeteccion = 8f;
-    public LayerMask capaEsbirros;
+    // CAMBIO: Usar -1 (Everything) en lugar de LayerMask específico
+    // public LayerMask capaEsbirros;
     public float cooldownRed = 0.8f;
 
     [Header("Configuración Vida")]
@@ -109,26 +111,36 @@ public class SubmarinoController : MonoBehaviour
             return;
         }
 
-        // Buscar esbirro más cercano
-        Collider2D[] esbirros = Physics2D.OverlapCircleAll(transform.position, rangoDeteccion, capaEsbirros);
+        // CAMBIO: Buscar esbirros por tag en lugar de layer
+        GameObject[] esbirrosGameObjects = GameObject.FindGameObjectsWithTag("Esbirro");
         Transform objetivo = null;
         float distanciaMinima = Mathf.Infinity;
 
-        foreach (Collider2D esbirro in esbirros)
+        Debug.Log($"Esbirros encontrados: {esbirrosGameObjects.Length}");
+
+        foreach (GameObject esbirroGO in esbirrosGameObjects)
         {
-            float distancia = Vector2.Distance(transform.position, esbirro.transform.position);
-            if (distancia < distanciaMinima)
+            // Verificar que el esbirro esté dentro del rango
+            float distancia = Vector2.Distance(transform.position, esbirroGO.transform.position);
+            if (distancia <= rangoDeteccion && distancia < distanciaMinima)
             {
-                distanciaMinima = distancia;
-                objetivo = esbirro.transform;
+                // Verificar que no haya sido atrapado ya
+                CatchableObject catchable = esbirroGO.GetComponent<CatchableObject>();
+                if (catchable == null || !catchable.FueAtrapado)
+                {
+                    distanciaMinima = distancia;
+                    objetivo = esbirroGO.transform;
+                }
             }
         }
 
         if (objetivo == null)
         {
-            Debug.Log("No se encontraron esbirros en el rango");
+            Debug.Log("No se encontraron esbirros válidos en el rango");
             return;
         }
+
+        Debug.Log($"Lanzando red hacia esbirro a distancia: {distanciaMinima}");
 
         // Calcular posición de lanzamiento (bajo el submarino)
         Vector3 posicionLanzamiento = transform.position + new Vector3(0, -distanciaLanzamiento, 0);

@@ -7,11 +7,17 @@ public class GameManagerDP : MonoBehaviour
 
     [Header("Configuración UI")]
     public TextMeshProUGUI basuraEsquivadaText;
-    public TextMeshProUGUI puntuacionText; // Nuevo texto para mostrar puntuación
+    public TextMeshProUGUI puntuacionText;
+
+    [Header("Fin del Juego")]
+    public GameObject panelFinJuego; // Panel opcional para mostrar al finalizar
+    public string mensajeFinal = "¡Has esquivado toda la basura!";
 
     private int _esbirrosEsquivados = 0;
-    private int _puntuacion = 0; // Nueva variable para puntuación
+    private int _puntuacion = 0;
+
     private const int ObjetivoEsquivar = 10;
+    private bool juegoFinalizado = false;
 
     void Awake()
     {
@@ -27,9 +33,10 @@ public class GameManagerDP : MonoBehaviour
         ActualizarUI();
     }
 
-    // Método para añadir puntuación (que faltaba)
     public void AddScore(int puntos)
     {
+        if (juegoFinalizado) return;
+
         _puntuacion += puntos;
         ActualizarUI();
         Debug.Log($"Puntuación añadida: {puntos}. Total: {_puntuacion}");
@@ -37,12 +44,15 @@ public class GameManagerDP : MonoBehaviour
 
     public void EsbirroEsquivado()
     {
+        if (juegoFinalizado) return;
+
         _esbirrosEsquivados++;
         ActualizarUI();
 
         if (_esbirrosEsquivados >= ObjetivoEsquivar)
         {
             Debug.Log("¡Objetivo de esquivar completado!");
+            FinalizarJuego();
         }
     }
 
@@ -57,5 +67,21 @@ public class GameManagerDP : MonoBehaviour
         {
             puntuacionText.text = $"PUNTOS: {_puntuacion}";
         }
+    }
+
+    void FinalizarJuego()
+    {
+        juegoFinalizado = true;
+
+        // Detener el tiempo si deseas
+        Time.timeScale = 0f;
+
+        // Mostrar panel o mensaje final
+        if (panelFinJuego != null)
+        {
+            panelFinJuego.SetActive(true);
+        }
+
+        Debug.Log(mensajeFinal);
     }
 }

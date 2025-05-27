@@ -18,15 +18,38 @@ public class DamaPlasticaManager : MonoBehaviour
     [Header("Configuración Animación")]
     public Animator animator;
 
-    private bool estaActiva = false;
+    private bool estaActiva = true; // Cambiado a true por defecto
     private bool estaLanzando = false;
     private int esbirrosLanzados = 0;
+
+    [Header("Persecución al Jugador")]
+    public Transform jugador;           // Referencia al jugador
+    public float velocidadPersecucion = 2f; // Velocidad con la que sigue al jugador
+    public float distanciaMinimaPerseguir = 1.5f; // Distancia mínima para detenerse
+
+    [Header("Movimiento Horizontal")]
+    public bool seguirHorizontalmente = true;
+    public float offsetHorizontal = 2f; // Distancia horizontal para mantener del jugador
+    public float suavizadoMovimiento = 5f;
+
+    [Header("Movimiento Avanzado")]
+    public float amplitudOndulacion = 0.5f; // Movimiento ondulante vertical
+    public float frecuenciaOndulacion = 1f;
+    public float velocidadAjustePosicion = 3f;
+
+    private float tiempoOndulacion;
 
     void Start()
     {
         // Inicializar en posición fuera de pantalla
         transform.position = posicionInicial;
-        gameObject.SetActive(false);
+
+        // Activar inmediatamente
+        gameObject.SetActive(true);
+        estaActiva = true;
+
+        // Iniciar la aparición automáticamente
+        StartCoroutine(AnimacionAparicion());
 
         // Si no se asignó el punto de lanzamiento, usar la posición de la dama
         if (puntoLanzamientoAbanico == null)
@@ -39,16 +62,48 @@ public class DamaPlasticaManager : MonoBehaviour
         }
     }
 
-    public void AparecerEnEscena()
+    void Update()
     {
-        if (estaActiva) return;
+        if (estaActiva && jugador != null)
+        {
+            tiempoOndulacion += Time.deltaTime;
 
-        Debug.Log("La Dama de Plástico aparece en escena!");
-        gameObject.SetActive(true);
-        estaActiva = true;
+            // 1. Calcular posición objetivo (siempre detrás/alejada del jugador)
+            Vector3 posicionObjetivo = new Vector3(
+                jugador.position.x - offsetHorizontal,
+                jugador.position.y, // Seguir también verticalmente
+                transform.position.z
+            );
 
-        StartCoroutine(AnimacionAparicion());
+            // 2. Movimiento suavizado hacia la posición objetivo
+            transform.position = Vector3.Lerp(transform.position,
+                                            posicionObjetivo,
+                                            velocidadAjustePosicion * Time.deltaTime);
+
+            // 3. Añadir ondulación para movimiento más orgánico
+            float ondulacionY = Mathf.Sin(tiempoOndulacion * frecuenciaOndulacion) * amplitudOndulacion;
+            transform.position += new Vector3(0, ondulacionY, 0);
+
+            // 4. Rotación/volteado
+            RotarHaciaJugador();
+        }
     }
+    void RotarHaciaJugador()
+    {
+        // Solo rotar en el eje Y para mantener el sprite 2D correctamente
+        float direccionX = jugador.position.x - transform.position.x;
+
+        // Determinar la rotación basada en la posición del jugador
+        if (direccionX > 0.1f) // Jugador a la derecha
+        {
+            transform.localScale = new Vector3(-1, 1, 1); // Voltear sprite
+        }
+        else if (direccionX < -0.1f) // Jugador a la izquierda
+        {
+            transform.localScale = new Vector3(1, 1, 1); // Sprite normal
+        }
+    }
+
 
     IEnumerator AnimacionAparicion()
     {
@@ -147,6 +202,7 @@ public class DamaPlasticaManager : MonoBehaviour
         Debug.Log("Esbirro lanzado desde el abanico de la Dama");
     }
 
+    // Método público por si necesitas forzar la retirada desde otro script
     public void Retirarse()
     {
         if (!estaActiva) return;
