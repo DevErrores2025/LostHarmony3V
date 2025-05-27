@@ -25,7 +25,7 @@ public class DamaPlasticaManager : MonoBehaviour
     [Header("Persecución al Jugador")]
     public Transform jugador;           // Referencia al jugador
     public float velocidadPersecucion = 2f; // Velocidad con la que sigue al jugador
-    public float distanciaMinimaPerseguir = 1.5f; // Distancia mínima para detenerse
+    //public float distanciaMinimaPerseguir = 1.5f; // Distancia mínima para detenerse
 
     [Header("Movimiento Horizontal")]
     public bool seguirHorizontalmente = true;
@@ -42,37 +42,40 @@ public class DamaPlasticaManager : MonoBehaviour
     void Start()
     {
         // Inicializar en posición fuera de pantalla
-        transform.position = posicionInicial;
+        // transform.position = posicionInicial;
 
         // Activar inmediatamente
-        gameObject.SetActive(true);
-        estaActiva = true;
+        //gameObject.SetActive(true);
+        //estaActiva = true;
 
         // Iniciar la aparición automáticamente
-        StartCoroutine(AnimacionAparicion());
+        //StartCoroutine(AnimacionAparicion());
 
         // Si no se asignó el punto de lanzamiento, usar la posición de la dama
-        if (puntoLanzamientoAbanico == null)
-        {
-            // Crear un punto de lanzamiento ligeramente adelante de la dama
-            GameObject puntoLanzamiento = new GameObject("PuntoLanzamientoAbanico");
-            puntoLanzamiento.transform.SetParent(transform);
-            puntoLanzamiento.transform.localPosition = new Vector3(-1f, 0f, 0f);
-            puntoLanzamientoAbanico = puntoLanzamiento.transform;
-        }
+        /*  if (puntoLanzamientoAbanico == null)
+          {
+              // Crear un punto de lanzamiento ligeramente adelante de la dama
+              GameObject puntoLanzamiento = new GameObject("PuntoLanzamientoAbanico");
+              puntoLanzamiento.transform.SetParent(transform);
+              puntoLanzamiento.transform.localPosition = new Vector3(-1f, 0f, 0f);
+              puntoLanzamientoAbanico = puntoLanzamiento.transform;
+          }
+      }*/
     }
 
     void Update()
     {
-        if (estaActiva && jugador != null)
+        if (jugador != null)
         {
-            tiempoOndulacion += Time.deltaTime;
+            Vector3 direccion = (jugador.position - transform.position).normalized;
+            transform.position += direccion * velocidadPersecucion*Time.deltaTime;
+            /*tiempoOndulacion += Time.deltaTime;
 
-            // Offset dinámico basado en dirección
+           /* // Offset dinámico basado en dirección
             float offsetDinamico = (transform.localScale.x > 0) ?
                 -offsetHorizontal :
                 offsetHorizontal;
-
+           
             Vector3 posicionObjetivo = new Vector3(
                 jugador.position.x + offsetDinamico, // Posición relativa al jugador
                 jugador.position.y + Mathf.Sin(tiempoOndulacion * frecuenciaOndulacion) * amplitudOndulacion,
@@ -87,9 +90,11 @@ public class DamaPlasticaManager : MonoBehaviour
             );
 
             RotarHaciaJugador();
+           */
         }
     }
-    void RotarHaciaJugador()
+    /*
+    void RotarHaciaJugador() //Si funciona
     {
         float direccionX = jugador.position.x - transform.position.x;
 
@@ -102,8 +107,8 @@ public class DamaPlasticaManager : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1); // Mirar a la izquierda
         }
-    }
-
+    }*/
+    /*
     IEnumerator AnimacionAparicion()
     {
         // Mover desde posición inicial hasta posición final
@@ -271,5 +276,5 @@ public class DamaPlasticaManager : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(puntoLanzamientoAbanico.position, 0.3f);
         }
-    }
+    }*/
 }
