@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Charco1_0: 1318914428899092893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
