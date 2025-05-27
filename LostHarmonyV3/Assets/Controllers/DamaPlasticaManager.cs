@@ -68,42 +68,41 @@ public class DamaPlasticaManager : MonoBehaviour
         {
             tiempoOndulacion += Time.deltaTime;
 
-            // 1. Calcular posición objetivo (siempre detrás/alejada del jugador)
+            // Offset dinámico basado en dirección
+            float offsetDinamico = (transform.localScale.x > 0) ?
+                -offsetHorizontal :
+                offsetHorizontal;
+
             Vector3 posicionObjetivo = new Vector3(
-                jugador.position.x - offsetHorizontal,
-                jugador.position.y, // Seguir también verticalmente
+                jugador.position.x + offsetDinamico, // Posición relativa al jugador
+                jugador.position.y + Mathf.Sin(tiempoOndulacion * frecuenciaOndulacion) * amplitudOndulacion,
                 transform.position.z
             );
 
-            // 2. Movimiento suavizado hacia la posición objetivo
-            transform.position = Vector3.Lerp(transform.position,
-                                            posicionObjetivo,
-                                            velocidadAjustePosicion * Time.deltaTime);
+            // Movimiento suavizado con velocidad ajustable
+            transform.position = Vector3.Lerp(
+                transform.position,
+                posicionObjetivo,
+                velocidadAjustePosicion * Time.deltaTime
+            );
 
-            // 3. Añadir ondulación para movimiento más orgánico
-            float ondulacionY = Mathf.Sin(tiempoOndulacion * frecuenciaOndulacion) * amplitudOndulacion;
-            transform.position += new Vector3(0, ondulacionY, 0);
-
-            // 4. Rotación/volteado
             RotarHaciaJugador();
         }
     }
     void RotarHaciaJugador()
     {
-        // Solo rotar en el eje Y para mantener el sprite 2D correctamente
         float direccionX = jugador.position.x - transform.position.x;
 
-        // Determinar la rotación basada en la posición del jugador
+        // Rotación corregida (valores invertidos)
         if (direccionX > 0.1f) // Jugador a la derecha
         {
-            transform.localScale = new Vector3(-1, 1, 1); // Voltear sprite
+            transform.localScale = new Vector3(1, 1, 1); // Mirar a la derecha
         }
         else if (direccionX < -0.1f) // Jugador a la izquierda
         {
-            transform.localScale = new Vector3(1, 1, 1); // Sprite normal
+            transform.localScale = new Vector3(-1, 1, 1); // Mirar a la izquierda
         }
     }
-
 
     IEnumerator AnimacionAparicion()
     {
