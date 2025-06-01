@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class ParallaxLayerSimple : MonoBehaviour
 {
-
     [Header("Configuración")]
     public float parallaxFactor = 0.5f;
 
@@ -19,11 +18,20 @@ public class ParallaxLayerSimple : MonoBehaviour
     private List<Transform> copies = new List<Transform>();
     private Vector3 lastCameraPosition;
     private SpriteRenderer originalRenderer;
+    private bool isControlledByBackground = false;
 
     void Start()
     {
+        // Verificar si está siendo controlado por ParallaxBackground
+        ParallaxBackground backgroundController = GetComponentInParent<ParallaxBackground>();
+        isControlledByBackground = (backgroundController != null);
+
         mainCamera = Camera.main;
-        lastCameraPosition = mainCamera.transform.position;
+        if (mainCamera != null)
+        {
+            lastCameraPosition = mainCamera.transform.position;
+        }
+
         originalRenderer = GetComponent<SpriteRenderer>();
 
         CalculateTextureWidth();
@@ -32,7 +40,7 @@ public class ParallaxLayerSimple : MonoBehaviour
 
         if (showDebugInfo)
         {
-            Debug.Log($"{name}: Created {copies.Count} copies, texture width: {textureWidth}");
+            Debug.Log($"{name}: Created {copies.Count} copies, texture width: {textureWidth}, controlled by background: {isControlledByBackground}");
         }
     }
 
@@ -86,29 +94,40 @@ public class ParallaxLayerSimple : MonoBehaviour
 
     void Update()
     {
-        if (mainCamera == null) return;
+        // Solo manejar el movimiento automáticamente si NO está controlado por ParallaxBackground
+        if (!isControlledByBackground && mainCamera != null)
+        {
+            HandleAutomaticMovement();
+        }
+    }
 
-        MoveAllCopies();
-        CheckAndRepositionCopies();
-
+    void HandleAutomaticMovement()
+    {
+        Vector3 deltaMovement = mainCamera.transform.position - lastCameraPosition;
+        Move(deltaMovement.x, deltaMovement.y);
         lastCameraPosition = mainCamera.transform.position;
     }
 
-    void MoveAllCopies()
+    // Método público para ser llamado desde ParallaxBackground
+    public void Move(float deltaX, float deltaY)
     {
-        Vector3 deltaMovement = mainCamera.transform.position - lastCameraPosition;
+        if (mainCamera == null) return;
 
-        // Mover todas las copias según el factor de parallax
-        Vector3 parallaxMovement = new Vector3(deltaMovement.x * parallaxFactor, 0, 0);
+        // Aplicar movimiento de parallax
+        Vector3 parallaxMovement = new Vector3(deltaX * parallaxFactor, deltaY * parallaxFactor, 0);
 
         foreach (Transform copy in copies)
         {
             copy.position -= parallaxMovement;
         }
+
+        CheckAndRepositionCopies();
     }
 
     void CheckAndRepositionCopies()
     {
+        if (mainCamera == null) return;
+
         float cameraX = mainCamera.transform.position.x;
         float leftBound = cameraX - textureWidth * 2;  // Límite izquierdo (fuera de vista)
         float rightBound = cameraX + textureWidth * 2; // Límite derecho (fuera de vista)

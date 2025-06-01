@@ -212,6 +212,7 @@ public class SubmarinoController : MonoBehaviour
         {
             Debug.Log("¡Submarino destruido!");
             gameObject.SetActive(false);
+            FindAnyObjectByType<GameOver>().MostrarGameOver();
             return;
         }
 

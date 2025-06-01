@@ -8,9 +8,26 @@ public class ParallaxBackground : MonoBehaviour
     public ParallaxCamera parallaxCamera;
     public bool moverEnY = false; // Para permitir parallax vertical
 
-    List<ParallaxLayer> parallaxLayers = new List<ParallaxLayer>();
+    private List<ParallaxLayerSimple> parallaxLayers = new List<ParallaxLayerSimple>();
+    private Vector3 lastCameraPosition;
 
     void Start()
+    {
+        InitializeParallaxCamera();
+        SetLayers();
+
+        // Guardar posición inicial de la cámara
+        if (parallaxCamera != null && parallaxCamera.transform != null)
+        {
+            lastCameraPosition = parallaxCamera.transform.position;
+        }
+        else if (Camera.main != null)
+        {
+            lastCameraPosition = Camera.main.transform.position;
+        }
+    }
+
+    void InitializeParallaxCamera()
     {
         if (parallaxCamera == null)
         {
@@ -23,23 +40,28 @@ public class ParallaxBackground : MonoBehaviour
 
         if (parallaxCamera != null)
         {
-            parallaxCamera.onCameraTranslate += Move;
+            // Suscribirse al evento si existe
+            if (parallaxCamera.onCameraTranslate != null)
+            {
+                parallaxCamera.onCameraTranslate += Move;
+            }
+            else
+            {
+                Debug.LogWarning("ParallaxCamera no tiene el evento onCameraTranslate configurado. Usando Update() como fallback.");
+            }
         }
         else
         {
-            Debug.LogWarning("No se encontró ParallaxCamera. Asegúrate de que la cámara principal tenga el componente ParallaxCamera.");
+            Debug.LogWarning("No se encontró ParallaxCamera. El sistema funcionará usando Camera.main como fallback.");
         }
-
-        SetLayers();
     }
 
     void SetLayers()
     {
         parallaxLayers.Clear();
-
         for (int i = 0; i < transform.childCount; i++)
         {
-            ParallaxLayer layer = transform.GetChild(i).GetComponent<ParallaxLayer>();
+            ParallaxLayerSimple layer = transform.GetChild(i).GetComponent<ParallaxLayerSimple>();
             if (layer != null)
             {
                 layer.name = "Layer-" + i;
@@ -47,21 +69,50 @@ public class ParallaxBackground : MonoBehaviour
                 Debug.Log($"Agregado layer: {layer.name} con factor: {layer.parallaxFactor}");
             }
         }
-
         Debug.Log($"Total de layers de parallax: {parallaxLayers.Count}");
+    }
+
+    void Update()
+    {
+        // Si no tenemos ParallaxCamera o su evento, manejar el movimiento manualmente
+        if (parallaxCamera == null || parallaxCamera.onCameraTranslate == null)
+        {
+            HandleFallbackMovement();
+        }
+    }
+
+    void HandleFallbackMovement()
+    {
+        Camera activeCamera = parallaxCamera != null ? parallaxCamera.GetComponent<Camera>() : Camera.main;
+
+        if (activeCamera != null)
+        {
+            Vector3 currentCameraPosition = activeCamera.transform.position;
+            Vector3 deltaMovement = currentCameraPosition - lastCameraPosition;
+
+            if (deltaMovement.magnitude > 0.001f) // Solo mover si hay cambio significativo
+            {
+                Move(deltaMovement.x, deltaMovement.y);
+            }
+
+            lastCameraPosition = currentCameraPosition;
+        }
     }
 
     void Move(float deltaX, float deltaY)
     {
-        foreach (ParallaxLayer layer in parallaxLayers)
+        foreach (ParallaxLayerSimple layer in parallaxLayers)
         {
-            if (moverEnY)
+            if (layer != null)
             {
-                layer.Move(deltaX, deltaY);
-            }
-            else
-            {
-                layer.Move(deltaX, 0);
+                if (moverEnY)
+                {
+                    layer.Move(deltaX, deltaY);
+                }
+                else
+                {
+                    layer.Move(deltaX, 0);
+                }
             }
         }
     }
@@ -72,6 +123,29 @@ public class ParallaxBackground : MonoBehaviour
         if (Application.isPlaying)
         {
             SetLayers();
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Desuscribirse del evento para evitar errores
+        if (parallaxCamera != null && parallaxCamera.onCameraTranslate != null)
+        {
+            parallaxCamera.onCameraTranslate -= Move;
+        }
+    }
+
+    // Método para debugging
+    [ContextMenu("Debug Parallax Layers")]
+    void DebugParallaxLayers()
+    {
+        Debug.Log($"=== {name} Parallax Layers ===");
+        for (int i = 0; i < parallaxLayers.Count; i++)
+        {
+            if (parallaxLayers[i] != null)
+            {
+                Debug.Log($"Layer {i}: {parallaxLayers[i].name}, Factor: {parallaxLayers[i].parallaxFactor}");
+            }
         }
     }
 }
