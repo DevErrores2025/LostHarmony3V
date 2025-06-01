@@ -2,17 +2,31 @@ using UnityEngine;
 
 public class BolaElectrica : MonoBehaviour
 {
-    public float velocidad = 2f;
-    public float alturaDesaparicion = 6f; // Ajusta seg�n tu escena
+    public float daño = 20f;
+    public float velocidad = 5f;
+    public float vidaUtil = 5f;
 
-    void Update()
+    private Transform objetivo;
+
+    void Start()
     {
-        // Mover hacia arriba
-        transform.Translate(Vector3.up * velocidad * Time.deltaTime);
+        objetivo = GameObject.FindGameObjectWithTag("Jugador")?.transform;
 
-        // Si sale de pantalla (por altura), se destruye
-        if (transform.position.y >= alturaDesaparicion)
+        if (objetivo != null)
         {
+            Vector2 direccion = (objetivo.position - transform.position).normalized;
+            GetComponent<Rigidbody2D>().linearVelocity = direccion * velocidad;
+        }
+
+        Destroy(gameObject, vidaUtil); // Destruye la bola despu�s de cierto tiempo
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        JugadorVida jugador = collision.GetComponent<JugadorVida>();
+        if (jugador != null)
+        {
+            jugador.TomarDaño(daño);
             Destroy(gameObject);
         }
     }

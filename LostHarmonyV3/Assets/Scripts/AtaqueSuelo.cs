@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-
 public class AtaqueSuelo : MonoBehaviour
 {
     public GameObject bolaPrefab;
@@ -10,9 +9,9 @@ public class AtaqueSuelo : MonoBehaviour
     public Transform posicionCartel;
 
     private GameObject cartelInstancia;
+
     public void GenerarAtaqueEspecial()
     {
-
         // Instanciar bolas
         foreach (Transform punto in puntosSpawn)
         {
