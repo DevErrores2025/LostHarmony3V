@@ -5004,6 +5004,28 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 762}
     spritePosition: {x: 42, y: 19}
+  - name: Personaje principal_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 56
+      width: 512
+      height: 954
+    spriteID: 89b1b9d777be1f54ab2dd07da1254c2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 56}
+    spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
   sharedRigSpriteImportData: []
