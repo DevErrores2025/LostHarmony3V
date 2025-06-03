@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c4d4da471039b184e8cdf55f42fd43f8
+guid: 19ddbb063c045a145a13cc7b3dfc203d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2432228050283873935
-    second: btn Jugar (1)_0
+      213: -6063482763010846559
+    second: btn Jugar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: btn Jugar (1)_0
+      name: btn Jugar_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 179b61a897dfe3ed0800000000000000
-      internalID: -2432228050283873935
+      spriteID: 1a0d8018d8e2adba0800000000000000
+      internalID: -6063482763010846559
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      btn Jugar_0: -6063482763010846559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
