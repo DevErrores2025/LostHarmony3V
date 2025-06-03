@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 546a02bc13de7114ab0ea47dce32f13e
+guid: 2221caa96719d954c85dd9f0dffa6a58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6630341104690361922
-    second: Adobe Express - file_0
+      213: 1577151783898516065
+    second: Rayopqueno_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Adobe Express - file_0
+      name: Rayopqueno_0
       rect:
         serializedVersion: 2
-        x: 114
-        y: 142
-        width: 335
-        height: 323
+        x: 166
+        y: 64
+        width: 333
+        height: 357
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2467dbc0b14b30c50800000000000000
-      internalID: 6630341104690361922
+      spriteID: 16a052cf03b23e510800000000000000
+      internalID: 1577151783898516065
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rayopqueno_0: 1577151783898516065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2221caa96719d954c85dd9f0dffa6a58
+guid: 0487b5d9e39572e4ebdbdfbe939fe323
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1577151783898516065
-    second: Rayopqueno_0
+      213: -2731161634666084150
+    second: fe860ba4c8bf83e0391ef32739a776b2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rayopqueno_0
+      name: fe860ba4c8bf83e0391ef32739a776b2_0
       rect:
         serializedVersion: 2
-        x: 166
-        y: 64
-        width: 333
-        height: 357
+        x: 0
+        y: 0
+        width: 736
+        height: 981
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16a052cf03b23e510800000000000000
-      internalID: 1577151783898516065
+      spriteID: ac88d8da6f6f81ad0800000000000000
+      internalID: -2731161634666084150
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fe860ba4c8bf83e0391ef32739a776b2_0: -2731161634666084150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

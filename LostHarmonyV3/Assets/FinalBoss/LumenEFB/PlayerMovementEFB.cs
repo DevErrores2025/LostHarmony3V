@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementEFB : MonoBehaviour
 {
     public float velocidadMovimiento = 5f;
     public float fuerzaSalto = 12f;
