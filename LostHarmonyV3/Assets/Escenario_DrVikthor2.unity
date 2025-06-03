@@ -1984,7 +1984,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
       propertyPath: m_Name
-      value: Personaje principal
+      value: PersonajeEFB
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
       propertyPath: m_TagString
@@ -3855,8 +3855,8 @@ Transform:
   m_GameObject: {fileID: 1705229791}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0283, y: -0.0438, z: 0}
-  m_LocalScale: {x: 2.4401202, y: 1.63362, z: 1}
+  m_LocalPosition: {x: -0.093, y: -0.0438, z: 0}
+  m_LocalScale: {x: 2.503167, y: 1.63362, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4231,7 +4231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 490e3071044891642af5de6bc6f4d4e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.56
+      value: -7.86
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 490e3071044891642af5de6bc6f4d4e4, type: 3}
       propertyPath: m_LocalPosition.y
