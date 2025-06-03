@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementAlc : MonoBehaviour
 {
     public float velocidadMovimiento = 5f;
     public float fuerzaSalto = 12f;

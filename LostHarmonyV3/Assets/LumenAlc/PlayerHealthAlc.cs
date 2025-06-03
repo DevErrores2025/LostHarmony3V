@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealthAlc : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
 
-    public HealthBar healthBar; // Arrastra el objeto de UI aquí
+    public HealthBarAlc healthBar; // Arrastra el objeto de UI aquí
     private Animator animator;
     private bool invulnerable = false;
     public float invulnerableDuration = 0.5f;

@@ -11,7 +11,7 @@ public class CharcoToxico : MonoBehaviour
         {
             Debug.Log("Player tocó el charco tóxico");
             // Aquí asumes que el jugador tiene un script con una función TakeDamage()
-            other.GetComponent<PlayerHealth>()?.TakeDamage(damageAmount);
+            other.GetComponent<PlayerHealthAlc>()?.TakeDamage(damageAmount);
 
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
             if (rb != null)

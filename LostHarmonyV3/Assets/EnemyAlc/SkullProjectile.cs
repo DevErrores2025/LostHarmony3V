@@ -15,7 +15,7 @@ public class SkullProjectile : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Trigger hit: " + other.name);
-            other.GetComponent<PlayerHealth>()?.TakeDamage(5);
+            other.GetComponent<PlayerHealthAlc>()?.TakeDamage(5);
             Destroy(gameObject);
         }
         else if (other.CompareTag("Ground"))

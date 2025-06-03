@@ -7,7 +7,7 @@ public class ParallaxLayerData
     [Range(0f, 1f)] public float multiplier = 0.5f;
 }
 
-public class ParallaxController : MonoBehaviour
+public class ParallaxControllerAlc : MonoBehaviour
 {
     public Transform player; 
     public ParallaxLayerData[] layers;

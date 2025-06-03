@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class HealthBarAlc : MonoBehaviour
 {
     public Image fillImage; // Asigna aquí el objeto HealthFill
 
