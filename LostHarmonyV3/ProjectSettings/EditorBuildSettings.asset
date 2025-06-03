@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alcantarillas.unity
     guid: 04e535ee474ab6c4c97ea831a68d3af6
+  - enabled: 1
+    path: Assets/Scenes/Escenario_DrVikthor2.unity
+    guid: 43d39eb5f2e818a44bb025922bed4708
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
