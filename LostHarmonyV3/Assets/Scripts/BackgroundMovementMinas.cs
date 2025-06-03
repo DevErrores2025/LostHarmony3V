@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class BackgroundMovement : MonoBehaviour
+public class BackgroundMovementMinas : MonoBehaviour
 {
     public Vector2 Speed;  // Controla la velocidad del parallax (X e Y)
     public List<CheckPosition> CheckPosition = new List<CheckPosition>();
 
-    public Vector3 InitialOffset = Vector3.zero;  // 🎯 Offset inicial configurable desde el Inspector
+    public Vector3 InitialOffset = Vector3.zero;  //  Offset inicial configurable desde el Inspector
 
     private Transform player;
 

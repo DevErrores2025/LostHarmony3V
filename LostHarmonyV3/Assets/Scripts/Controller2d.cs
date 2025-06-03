@@ -35,10 +35,10 @@ public class Controller2d : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontal = getHorizontal();
+        direccionMovimiento = getHorizontal();
         hit = Physics2D.OverlapCircle(groundCheck.position, _radius, layerMask);
 
-        Vector2 velocity = new Vector2(horizontal * moveSpeed, rb.linearVelocity.y);
+        Vector2 velocity = new Vector2(direccionMovimiento * moveSpeed, rb.linearVelocity.y);
 
         if (IsJump() && hit)
         {
@@ -50,29 +50,19 @@ public class Controller2d : MonoBehaviour
         // Animaciones
         if (enSuelo)
         {
-            if (direccionMovimiento != 0)
-            {
-                animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
-
-            }
-            else
-            {
-                animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
-
-            }
+            animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
         }
         else
         {
             animator.SetFloat("Velocidad", Mathf.Abs(direccionMovimiento));
-            // Se puede cambiar por una animación de salto si la tienes
         }
 
-        // Flip (mirar en la dirección correcta)
-        if (direccionMovimiento > 0 && !mirandoDerecha)
+        // Flip
+        if (direccionMovimiento > 0 && mirandoDerecha)
         {
             Girar();
         }
-        else if (direccionMovimiento < 0 && mirandoDerecha)
+        else if (direccionMovimiento < 0 && !mirandoDerecha)
         {
             Girar();
         }
