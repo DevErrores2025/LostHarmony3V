@@ -10,7 +10,7 @@ public class GameManagerDP : MonoBehaviour
     public TextMeshProUGUI puntuacionText;
 
     [Header("Fin del Juego")]
-    public GameObject panelFinJuego; // Panel opcional para mostrar al finalizar
+    public GameObject panelFinJuego;
     public string mensajeFinal = "¡Has esquivado toda la basura!";
 
     private int _esbirrosEsquivados = 0;
@@ -53,11 +53,7 @@ public class GameManagerDP : MonoBehaviour
         {
             Debug.Log("¡Objetivo de esquivar completado!");
             FinalizarJuego();
-            LevelManager gameManager = FindObjectOfType<LevelManager>();
-            if (gameManager != null)
-            {
-                gameManager.NivelCompletado();
-            }
+           
         }
     }
 
@@ -81,12 +77,8 @@ public class GameManagerDP : MonoBehaviour
         // Detener el tiempo si deseas
         Time.timeScale = 0f;
 
-        // Mostrar panel o mensaje final
-        if (panelFinJuego != null)
-        {
-            panelFinJuego.SetActive(true);
-        }
-
+        panelFinJuego.SetActive(true);
+        FindAnyObjectByType<NextLevelDP>().MostrarGameNext();
         Debug.Log(mensajeFinal);
     }
 }
