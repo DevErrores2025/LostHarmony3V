@@ -78,10 +78,6 @@ public class PlayerProjectile : MonoBehaviour
             
             if (enableDebug) Debug.Log($"Projectile velocity set to: {rb.linearVelocity}");
         }
-        else
-        {
-            if (enableDebug) Debug.LogError("No Rigidbody2D found on projectile!");
-        }
     }
     
     void OnTriggerEnter2D(Collider2D other)

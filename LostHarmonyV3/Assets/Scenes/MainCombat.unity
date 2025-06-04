@@ -2370,7 +2370,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerBC
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
       propertyPath: m_TagString
@@ -2637,6 +2637,13 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 1
+  projectilePrefab: {fileID: 0}
+  attackPoint: {fileID: 0}
+  projectileSpeed: 10
+  attackCooldown: 0.5
+  attackKey: 120
+  projectileLifetime: 3
+  projectileDamage: 25
   enableDebug: 1
 --- !u!4 &1186251759 stripped
 Transform:
