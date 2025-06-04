@@ -310,11 +310,6 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(15f);
         }
-        else if (other.CompareTag("HealthPickup"))
-        {
-            Heal(25f);
-            Destroy(other.gameObject);
-        }
     }
     
     // Public getters for other scripts

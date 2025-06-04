@@ -111,7 +111,7 @@ public class PlayerProjectile : MonoBehaviour
             Hit();
         }
         // Verificar si golpeó el suelo u obstáculos
-        else if (other.CompareTag("Ground") || other.CompareTag("Wall") || other.CompareTag("Obstacle"))
+        else if (other.CompareTag("Ground"))
         {
             if (enableDebug) Debug.Log("Projectile hit ground/wall/obstacle!");
             Hit();
