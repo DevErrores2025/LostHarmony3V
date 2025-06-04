@@ -23,6 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScenesDP/Escenario_DrVikthor2.unity
     guid: 43d39eb5f2e818a44bb025922bed4708
+    path: Assets/Scenes/MainCombat.unity
+    guid: acdc96fc470eca54ea6f65f0066317a9
+  - enabled: 1
+    path: Assets/Scenes/BossFight.unity
+    guid: 2b68c92eb554c0c44a7c5fecc3d7a5e6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
