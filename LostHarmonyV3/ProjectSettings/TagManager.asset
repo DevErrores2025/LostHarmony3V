@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - EnemyProjectile
+  - Ground
   - Wall
   - Enemy
   - EnemyAttack
@@ -49,6 +51,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Nubes
+    uniqueID: 793840461
+    locked: 0
+  - name: Frente
+    uniqueID: 3348648553
   - name: Background
     uniqueID: 1576952703
     locked: 0

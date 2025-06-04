@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 406522fbd31d7f8479ec187ea50782b5
+  productGUID: 8bac82145770daf438452f900af312f8
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: LostHarmonyV3
+  productName: EscenarioDPCompleto
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -595,14 +595,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: LostHarmonyV3
+  metroPackageName: EscenarioDPCompleto
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: LostHarmonyV3
+  metroApplicationDescription: EscenarioDPCompleto
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -673,11 +673,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9930698d-3582-47c5-8ecc-28ae43c66090
+  cloudProjectId: b6ddbcd0-4105-47f8-9c0d-661757131ab0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: LostHarmonyV3
-  organizationId: hansama04
+  projectName: EscenarioDPCompleto
+  organizationId: aleuzz
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

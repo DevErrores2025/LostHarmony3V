@@ -9,6 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Personaje.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/ScenesDP/InicioDP.unity
+    guid: c6e7958d5ecaba543b8dd4543811296e
+  - enabled: 1
+    path: Assets/ScenesDP/NivelesLostH.unity
+    guid: f2d512575b3f9044989bbd23fd9c9214
+  - enabled: 1
+    path: Assets/ScenesDP/Escena DP.unity
+    guid: 7f503d7a84a74fe4bb96aaade0643eca
+  - enabled: 1
+    path: Assets/ScenesDP/Alcantarillas.unity
+    guid: 04e535ee474ab6c4c97ea831a68d3af6
+  - enabled: 1
+    path: Assets/ScenesDP/Escenario_DrVikthor2.unity
+    guid: 43d39eb5f2e818a44bb025922bed4708
     path: Assets/Scenes/MainCombat.unity
     guid: acdc96fc470eca54ea6f65f0066317a9
   - enabled: 1

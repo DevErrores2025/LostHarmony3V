@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 44bc441fea6ded04a84aa6f277c0a894
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7119114246731926568
+    second: Capa 3 (2) 1_0
+  - first:
+      213: -818787362851313297
+    second: Capa 3 (2) 1_1
+  - first:
+      213: -8244541290142618656
+    second: Capa 3 (2) 1_2
+  - first:
+      213: -7167558312806433539
+    second: Capa 3 (2) 1_3
+  - first:
+      213: -337686309158848896
+    second: Capa 3 (2) 1_4
+  - first:
+      213: -2057061938465566444
+    second: Capa 3 (2) 1_5
+  - first:
+      213: 6663137053693926684
+    second: Capa 3 (2) 1_6
+  - first:
+      213: -3019455396682002012
+    second: Capa 3 (2) 1_7
+  - first:
+      213: -3654283633686228124
+    second: Capa 3 (2) 1_8
+  - first:
+      213: 3157835322744341671
+    second: Capa 3 (2) 1_9
+  - first:
+      213: -8129101362043090229
+    second: Capa 3 (2) 1_10
+  - first:
+      213: -6867299462508020748
+    second: Capa 3 (2) 1_11
+  - first:
+      213: 8800122448252138359
+    second: Capa 3 (2) 1_12
+  - first:
+      213: -1019555806996847477
+    second: Capa 3 (2) 1_13
+  - first:
+      213: 6606372204061174260
+    second: Capa 3 (2) 1_14
+  - first:
+      213: -1051237032125452283
+    second: Capa 3 (2) 1_15
+  - first:
+      213: -1846398422649363486
+    second: Capa 3 (2) 1_16
+  - first:
+      213: -2950755865260096727
+    second: Capa 3 (2) 1_17
+  - first:
+      213: 2519515245494736591
+    second: Capa 3 (2) 1_18
+  - first:
+      213: 7919301664591863831
+    second: Capa 3 (2) 1_19
+  - first:
+      213: -8391680807158965030
+    second: Capa 3 (2) 1_20
+  - first:
+      213: 7944659483152980184
+    second: Capa 3 (2) 1_21
+  - first:
+      213: 5429060947093814652
+    second: Capa 3 (2) 1_22
+  - first:
+      213: -2572964045225020355
+    second: Capa 3 (2) 1_23
+  - first:
+      213: 744026762900453367
+    second: Capa 3 (2) 1_24
+  - first:
+      213: -234653593679307629
+    second: Capa 3 (2) 1_25
+  - first:
+      213: -8641177737849482395
+    second: Capa 3 (2) 1_26
+  - first:
+      213: 3646426477830557898
+    second: Capa 3 (2) 1_27
+  - first:
+      213: 8169228114046179198
+    second: Capa 3 (2) 1_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_0
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1008
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c01ef40bc2cc260800000000000000
+      internalID: 7119114246731926568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_1
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1036
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f692baa4b3513a4f0800000000000000
+      internalID: -818787362851313297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_2
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 1021
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb2209c061859d80800000000000000
+      internalID: -8244541290142618656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_3
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1032
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc364a90b7b78c90800000000000000
+      internalID: -7167558312806433539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1026
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086f219471c405bf0800000000000000
+      internalID: -337686309158848896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_5
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 1015
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41198c4d019d373e0800000000000000
+      internalID: -2057061938465566444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_6
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 1026
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d5b27f8d7387c50800000000000000
+      internalID: 6663137053693926684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_7
+      rect:
+        serializedVersion: 2
+        x: 4060
+        y: 1026
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a112a1805db816d0800000000000000
+      internalID: -3019455396682002012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_8
+      rect:
+        serializedVersion: 2
+        x: 4743
+        y: 1032
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463db997560694dc0800000000000000
+      internalID: -3654283633686228124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 991
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a48b5fbe72e2db20800000000000000
+      internalID: 3157835322744341671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_10
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 980
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca074c8161af2f80800000000000000
+      internalID: -8129101362043090229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_11
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 955
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb7afaf58372b0a0800000000000000
+      internalID: -6867299462508020748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_12
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 988
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773720cddb0502a70800000000000000
+      internalID: 8800122448252138359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_13
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 978
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b842447356fc9d1f0800000000000000
+      internalID: -1019555806996847477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_14
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 978
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9a41d748c8eab50800000000000000
+      internalID: 6606372204061174260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_15
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 989
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5003d6d2d714961f0800000000000000
+      internalID: -1051237032125452283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_16
+      rect:
+        serializedVersion: 2
+        x: 4534
+        y: 969
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3a420da664066e0800000000000000
+      internalID: -1846398422649363486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_17
+      rect:
+        serializedVersion: 2
+        x: 4978
+        y: 963
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9238540ac2fcc07d0800000000000000
+      internalID: -2950755865260096727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 955
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc615ed44cd17f220800000000000000
+      internalID: 2519515245494736591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_19
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 925
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710682bd7e207ed60800000000000000
+      internalID: 7919301664591863831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_20
+      rect:
+        serializedVersion: 2
+        x: 3920
+        y: 952
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc93d454c2ca8b80800000000000000
+      internalID: -8391680807158965030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_21
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 909
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d895c215b9114e60800000000000000
+      internalID: 7944659483152980184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_22
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 945
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7df87fba26e75b40800000000000000
+      internalID: 5429060947093814652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 5198
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34b28045defa4cd0800000000000000
+      internalID: -2572964045225020355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_24
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 895
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7b01a1660535a00800000000000000
+      internalID: 744026762900453367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_25
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 895
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39cd97fbcc75ebcf0800000000000000
+      internalID: -234653593679307629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_26
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 895
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563d77e51ae541880800000000000000
+      internalID: -8641177737849482395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_27
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 908
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac05baedf85ba9230800000000000000
+      internalID: 3646426477830557898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 3 (2) 1_28
+      rect:
+        serializedVersion: 2
+        x: 3701
+        y: 895
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e775bd2ffadee5170800000000000000
+      internalID: 8169228114046179198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Capa 3 (2) 1_0: 7119114246731926568
+      Capa 3 (2) 1_1: -818787362851313297
+      Capa 3 (2) 1_10: -8129101362043090229
+      Capa 3 (2) 1_11: -6867299462508020748
+      Capa 3 (2) 1_12: 8800122448252138359
+      Capa 3 (2) 1_13: -1019555806996847477
+      Capa 3 (2) 1_14: 6606372204061174260
+      Capa 3 (2) 1_15: -1051237032125452283
+      Capa 3 (2) 1_16: -1846398422649363486
+      Capa 3 (2) 1_17: -2950755865260096727
+      Capa 3 (2) 1_18: 2519515245494736591
+      Capa 3 (2) 1_19: 7919301664591863831
+      Capa 3 (2) 1_2: -8244541290142618656
+      Capa 3 (2) 1_20: -8391680807158965030
+      Capa 3 (2) 1_21: 7944659483152980184
+      Capa 3 (2) 1_22: 5429060947093814652
+      Capa 3 (2) 1_23: -2572964045225020355
+      Capa 3 (2) 1_24: 744026762900453367
+      Capa 3 (2) 1_25: -234653593679307629
+      Capa 3 (2) 1_26: -8641177737849482395
+      Capa 3 (2) 1_27: 3646426477830557898
+      Capa 3 (2) 1_28: 8169228114046179198
+      Capa 3 (2) 1_3: -7167558312806433539
+      Capa 3 (2) 1_4: -337686309158848896
+      Capa 3 (2) 1_5: -2057061938465566444
+      Capa 3 (2) 1_6: 6663137053693926684
+      Capa 3 (2) 1_7: -3019455396682002012
+      Capa 3 (2) 1_8: -3654283633686228124
+      Capa 3 (2) 1_9: 3157835322744341671
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
