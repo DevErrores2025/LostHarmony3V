@@ -53,6 +53,11 @@ public class GameManagerDP : MonoBehaviour
         {
             Debug.Log("¡Objetivo de esquivar completado!");
             FinalizarJuego();
+            LevelManager gameManager = FindObjectOfType<LevelManager>();
+            if (gameManager != null)
+            {
+                gameManager.NivelCompletado();
+            }
         }
     }
 
