@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class BossController : MonoBehaviour
@@ -37,6 +38,18 @@ public class BossController : MonoBehaviour
     public LayerMask groundLayerMask = 1;
     public float groundCheckDistance = 10f;
     
+    [Header("Scene Transition")]
+    [Tooltip("Nombre de la siguiente escena cuando el boss muera")]
+    public string nextSceneName = "Alcantarillas";
+    [Tooltip("Tiempo de espera antes de cambiar de escena")]
+    public float sceneChangeDelay = 3f;
+    [Tooltip("Mostrar mensaje de victoria")]
+    public bool showVictoryMessage = true;
+    
+    [Header("Victory UI (Opcional)")]
+    public GameObject victoryPanel;
+    public UnityEngine.UI.Text victoryText;
+    
     [Header("Debug")]
     public bool enableDebug = true;
     
@@ -74,6 +87,12 @@ public class BossController : MonoBehaviour
         
         // Create spawn points if they don't exist
         CreateSpawnPoints();
+        
+        // Hide victory panel at start
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(false);
+        }
     }
     
     void CreateSpawnPoints()
@@ -168,8 +187,6 @@ public class BossController : MonoBehaviour
         if (fireballPrefab == null || player == null) return;
         
         // Generar posición aleatoria en el rango especificado
-        // X: de 1 a -10 (relativo al jugador)
-        // Y: de 6 a -6 (relativo al jugador)
         Vector3 randomTargetPosition = new Vector3(
             player.position.x + Random.Range(-10f, 1f), // De -10 a 1
             player.position.y + Random.Range(-6f, 6f),  // De -6 a 6
@@ -196,7 +213,6 @@ public class BossController : MonoBehaviour
         if (enableDebug) 
         {
             Debug.Log($"Boss fired fireball towards random position: {randomTargetPosition}");
-            // Dibujar línea para debug
             Debug.DrawLine(fireballSpawnPoint.position, randomTargetPosition, Color.red, 2f);
         }
     }
@@ -325,7 +341,7 @@ public class BossController : MonoBehaviour
         isDead = true;
         currentState = BossState.Dead;
         
-        if (enableDebug) Debug.Log("Boss defeated!");
+        if (enableDebug) Debug.Log("¡Boss derrotado! Cambiando a la escena de Alcantarillas...");
         
         // Stop all movement
         rb.linearVelocity = Vector2.zero;
@@ -334,10 +350,70 @@ public class BossController : MonoBehaviour
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
         
-        // Optional: Play death animation or effect here
+        // Start death sequence
+        StartCoroutine(DeathSequence());
+    }
+    
+    IEnumerator DeathSequence()
+    {
+        // Show victory message/panel if enabled
+        if (showVictoryMessage)
+        {
+            if (victoryPanel != null)
+            {
+                victoryPanel.SetActive(true);
+                if (victoryText != null)
+                {
+                    victoryText.text = "¡Boss Derrotado!\nAvanzando al siguiente nivel...";
+                }
+            }
+            else
+            {
+                if (enableDebug) Debug.Log("¡VICTORIA! Boss derrotado. Siguiente nivel en " + sceneChangeDelay + " segundos...");
+            }
+        }
         
-        // Destroy after delay
-        Destroy(gameObject, 2f);
+        // Wait for the specified delay
+        yield return new WaitForSeconds(sceneChangeDelay);
+        
+        // Change to next scene
+        ChangeToNextScene();
+    }
+    
+    void ChangeToNextScene()
+    {
+        if (enableDebug) Debug.Log($"Cambiando a la escena: {nextSceneName}");
+        
+        // Verify the scene exists before trying to load it
+        if (Application.CanStreamedLevelBeLoaded(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.LogError($"¡Escena '{nextSceneName}' no encontrada! Verifica que esté en Build Settings.");
+            
+            // Fallback: try loading by build index
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            int nextSceneIndex = currentSceneIndex + 1;
+            
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                if (enableDebug) Debug.Log($"Usando fallback: cargando escena índice {nextSceneIndex}");
+                SceneManager.LoadScene(nextSceneIndex);
+            }
+            else
+            {
+                Debug.LogError("No hay más escenas disponibles. Verifica tu Build Settings.");
+            }
+        }
+    }
+    
+    // Método público para cambiar la escena manualmente (útil para botones)
+    public void ForceChangeToNextScene()
+    {
+        if (enableDebug) Debug.Log("Forzando cambio de escena...");
+        ChangeToNextScene();
     }
     
     // Método para recibir daño de proyectiles del jugador

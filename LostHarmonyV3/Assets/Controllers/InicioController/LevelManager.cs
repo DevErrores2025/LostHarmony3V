@@ -3,16 +3,24 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    [Header("ConfiguraciÛn del Nivel")]
-    public int numeroDeNivel = 1; // Asignar en el Inspector seg˙n el nivel
+    [Header("Configuraci√≥n del Nivel")]
+    public int numeroDeNivel = 1; // Asignar en el Inspector seg√∫n el nivel
     
     [Header("Escenas")]
-    public string escenaMenuNiveles = "MenuNiveles";
-    public string escenaMenuPrincipal = "MenuPrincipal";
+    public string escenaMenuNiveles = "NivelesLostH"; // Cambia por el nombre de tu escena de selecci√≥n de niveles
+    public string escenaMenuPrincipal = "InicioDP";
     
     [Header("UI de Victoria (Opcional)")]
     public GameObject panelVictoria;
     public GameObject panelGameOver;
+
+    // Mapeo de niveles a escenas
+    private string[] escenasNiveles = {
+        "", // √çndice 0 vac√≠o
+        "Escena DP", // Nivel 1
+        "MainCombat",      // Nivel 2
+        "Alcantarillas"    // Nivel 3
+    };
 
     void Start()
     {
@@ -23,10 +31,10 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    // Llamar este mÈtodo cuando el jugador complete el nivel
+    // Llamar este m√©todo cuando el jugador complete el nivel
     public void NivelCompletado()
     {
-        Debug.Log($"°Nivel {numeroDeNivel} completado!");
+        Debug.Log($"¬°Nivel {numeroDeNivel} completado!");
         
         // Desbloquear el siguiente nivel
         LevelControllerLH.DesbloquearSiguienteNivel(numeroDeNivel);
@@ -39,8 +47,8 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            // Si no hay panel, ir directamente al men˙ de niveles
-            VolverAMenuNiveles();
+            // Si no hay panel, ir directamente al siguiente nivel o men√∫
+            SiguienteNivel();
         }
     }
     
@@ -56,22 +64,21 @@ public class LevelManager : MonoBehaviour
         }
     }
     
-    // MÈtodos para los botones de UI
+    // M√©todos para los botones de UI
     public void SiguienteNivel()
     {
         Time.timeScale = 1f; // Reanudar el tiempo
         
         int siguienteNivel = numeroDeNivel + 1;
-        string siguienteEscena = $"Nivel{siguienteNivel}";
         
         // Verificar si existe el siguiente nivel
-        if (siguienteNivel <= 5)
+        if (siguienteNivel < escenasNiveles.Length && !string.IsNullOrEmpty(escenasNiveles[siguienteNivel]))
         {
-            SceneManager.LoadScene(siguienteEscena);
+            SceneManager.LoadScene(escenasNiveles[siguienteNivel]);
         }
         else
         {
-            // Si era el ˙ltimo nivel, volver al men˙ principal
+            // Si era el √∫ltimo nivel, volver al men√∫ principal
             VolverAMenuPrincipal();
         }
     }
@@ -94,9 +101,15 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(escenaMenuPrincipal);
     }
     
-    // MÈtodo para pausar/despausar el juego
+    // M√©todo para pausar/despausar el juego
     public void PausarJuego()
     {
         Time.timeScale = Time.timeScale == 0f ? 1f : 0f;
+    }
+
+    // M√©todo para ir al siguiente nivel autom√°ticamente (√∫til para transiciones fluidas)
+    public void IrSiguienteNivelAutomatico()
+    {
+        Invoke("SiguienteNivel", 2f); // Esperar 2 segundos antes de cambiar
     }
 }

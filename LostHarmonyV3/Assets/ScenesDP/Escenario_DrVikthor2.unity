@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 131397188}
   m_Layer: 0
   m_Name: SpawnerBilletes
-  m_TagString: Untagged
+  m_TagString: Billete
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1982,6 +1982,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5960994668361117984, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4523006219303748742, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 756250172fbf1d04996e740f9de7b093, type: 2}
+    - target: {fileID: 8648882755762834919, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1113372
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648882755762834919, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.46353245
+      objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: 0aa92c00e6a2d3844a3b0730951aa16e, type: 3}
       propertyPath: m_Name
       value: PersonajeEFB
@@ -2041,22 +2057,6 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: 0aa92c00e6a2d3844a3b0730951aa16e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -5960994668361117984, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4523006219303748742, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 756250172fbf1d04996e740f9de7b093, type: 2}
-    - target: {fileID: 8648882755762834919, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.1113372
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648882755762834919, guid: c28c6f263c66a9547a755ca6000668ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.46353245
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3325,7 +3325,7 @@ Animator:
   m_GameObject: {fileID: 1502210237}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c70d38e0763e9db41bd22ddc6577578e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2cd868649c4409345af770a18ecdec64, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

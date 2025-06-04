@@ -10,18 +10,18 @@ public class LevelControllerLH : MonoBehaviour
     public Button buttonNivel3;
     public Button buttonNivel4;
 
-    [Header("BotÛn Atr·s")]
+    [Header("Bot√≥n Atr√°s")]
     public Button buttonAtras;
 
-    [Header("Im·genes de Bloqueo (Opcional)")]
+    [Header("Im√°genes de Bloqueo (Opcional)")]
     public GameObject[] lockIcons; // Para mostrar candados en niveles bloqueados
 
     [Header("Nombres de Escenas")]
-    public string escenaMenuPrincipal = "MenuPrincipal";
-    public string escenaNivel1 = "ScenesDP/Escena DP";
-    public string escenaNivel2 = "Alcantarillas";
-    //public string escenaNivel3 = "Nivel3";
-    //public string escenaNivel4 = "Nivel4";
+    public string escenaMenuPrincipal = "InicioDP";
+    public string escenaNivel1 = "Escena DP";
+    public string escenaNivel2 = "MainCombat";
+    public string escenaNivel3 = "Alcantarillas";
+    //public string escenaNivel4 = "Nivel4"; // Para futuro uso
 
     private Button[] todosLosBotones;
 
@@ -33,7 +33,7 @@ public class LevelControllerLH : MonoBehaviour
         // Configurar los botones
         ConfigurarBotones();
 
-        // Verificar quÈ niveles est·n desbloqueados
+        // Verificar qu√© niveles est√°n desbloqueados
         ActualizarNivelesDesbloqueados();
     }
 
@@ -42,21 +42,21 @@ public class LevelControllerLH : MonoBehaviour
         // Configurar eventos de los botones de niveles
         if (buttonNivel1 != null) buttonNivel1.onClick.AddListener(() => CargarNivel(escenaNivel1));
         if (buttonNivel2 != null) buttonNivel2.onClick.AddListener(() => CargarNivel(escenaNivel2));
-        //if (buttonNivel3 != null) buttonNivel3.onClick.AddListener(() => CargarNivel(escenaNivel3));
+        if (buttonNivel3 != null) buttonNivel3.onClick.AddListener(() => CargarNivel(escenaNivel3));
         //if (buttonNivel4 != null) buttonNivel4.onClick.AddListener(() => CargarNivel(escenaNivel4));
 
-        // Configurar botÛn atr·s
+        // Configurar bot√≥n atr√°s
         if (buttonAtras != null) buttonAtras.onClick.AddListener(VolverAlMenuPrincipal);
     }
 
     void ActualizarNivelesDesbloqueados()
     {
-        // Obtener el nivel m·s alto desbloqueado (por defecto solo el nivel 1)
+        // Obtener el nivel m√°s alto desbloqueado (por defecto solo el nivel 1)
         int nivelMaximoDesbloqueado = PlayerPrefs.GetInt("NivelMaximoDesbloqueado", 1);
 
-        Debug.Log($"Nivel m·ximo desbloqueado: {nivelMaximoDesbloqueado}");
+        Debug.Log($"Nivel m√°ximo desbloqueado: {nivelMaximoDesbloqueado}");
 
-        // Actualizar cada botÛn seg˙n el progreso
+        // Actualizar cada bot√≥n seg√∫n el progreso
         for (int i = 0; i < todosLosBotones.Length; i++)
         {
             if (todosLosBotones[i] != null)
@@ -64,7 +64,7 @@ public class LevelControllerLH : MonoBehaviour
                 int numeroNivel = i + 1;
                 bool estaDesbloqueado = numeroNivel <= nivelMaximoDesbloqueado;
 
-                // Activar/desactivar interacciÛn del botÛn
+                // Activar/desactivar interacci√≥n del bot√≥n
                 todosLosBotones[i].interactable = estaDesbloqueado;
 
                 // Cambiar apariencia visual (opcional)
@@ -81,7 +81,7 @@ public class LevelControllerLH : MonoBehaviour
 
     void CambiarAparienciaBoton(Button boton, bool desbloqueado)
     {
-        // Cambiar el alpha del botÛn para indicar si est· bloqueado
+        // Cambiar el alpha del bot√≥n para indicar si est√° bloqueado
         Color colorBoton = boton.image.color;
         colorBoton.a = desbloqueado ? 1f : 0.5f;
         boton.image.color = colorBoton;
@@ -95,25 +95,25 @@ public class LevelControllerLH : MonoBehaviour
 
     public void VolverAlMenuPrincipal()
     {
-        Debug.Log("Volviendo al men˙ principal");
+        Debug.Log("Volviendo al men√∫ principal");
         SceneManager.LoadScene(escenaMenuPrincipal);
     }
 
-    // MÈtodo para desbloquear el siguiente nivel (llamar desde otros scripts)
+    // M√©todo para desbloquear el siguiente nivel (llamar desde otros scripts)
     public static void DesbloquearSiguienteNivel(int nivelCompletado)
     {
         int nivelActual = PlayerPrefs.GetInt("NivelMaximoDesbloqueado", 1);
         int siguienteNivel = nivelCompletado + 1;
 
-        if (siguienteNivel > nivelActual && siguienteNivel <= 5)
+        if (siguienteNivel > nivelActual && siguienteNivel <= 4) // Cambiado a 4 niveles
         {
             PlayerPrefs.SetInt("NivelMaximoDesbloqueado", siguienteNivel);
             PlayerPrefs.Save();
-            Debug.Log($"°Nivel {siguienteNivel} desbloqueado!");
+            Debug.Log($"¬°Nivel {siguienteNivel} desbloqueado!");
         }
     }
 
-    // MÈtodo para resetear progreso (˙til para testing)
+    // M√©todo para resetear progreso (√∫til para testing)
     [ContextMenu("Resetear Progreso")]
     public void ResetearProgreso()
     {
