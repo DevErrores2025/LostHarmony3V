@@ -11,6 +11,17 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayerMask = 1;
     
+    [Header("Attack System")]
+    public GameObject projectilePrefab;
+    public Transform attackPoint;
+    public float projectileSpeed = 10f;
+    public float attackCooldown = 0.5f;
+    public KeyCode attackKey = KeyCode.X;
+    
+    [Header("Attack Settings")]
+    public float projectileLifetime = 3f;
+    public float projectileDamage = 25f;
+    
     [Header("Debug")]
     public bool enableDebug = true;
     
@@ -18,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private bool facingRight = true;
     private bool isGrounded;
+    private float lastAttackTime;
     
     void Start()
     {
@@ -46,6 +58,15 @@ public class PlayerController : MonoBehaviour
             
             groundCheck = groundCheckObj.transform;
         }
+        
+        // Crear attack point automáticamente
+        if (attackPoint == null)
+        {
+            GameObject attackPointObj = new GameObject("AttackPoint");
+            attackPointObj.transform.SetParent(transform);
+            attackPointObj.transform.localPosition = new Vector3(0.8f, 0.2f, 0);
+            attackPoint = attackPointObj.transform;
+        }
     }
     
     void Update()
@@ -53,6 +74,7 @@ public class PlayerController : MonoBehaviour
         // CONTROLES SIMPLES
         float horizontal = Input.GetAxis("Horizontal");
         bool jumpPressed = Input.GetKeyDown(KeyCode.Space);
+        bool attackPressed = Input.GetKeyDown(attackKey);
         
         // MÚLTIPLES MÉTODOS DE GROUND CHECK
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayerMask);
@@ -70,8 +92,11 @@ public class PlayerController : MonoBehaviour
         bool finalGrounded = isGrounded || isGroundedRay || isGroundedBox;
         
         // DEBUG DETALLADO
-        Debug.Log($"Jump: {jumpPressed} | Circle: {isGrounded} | Ray: {isGroundedRay} | Box: {isGroundedBox} | Final: {finalGrounded}");
-        Debug.Log($"GroundCheck Pos: {groundCheck.position} | Player Pos: {transform.position}");
+        if (enableDebug)
+        {
+            Debug.Log($"Jump: {jumpPressed} | Circle: {isGrounded} | Ray: {isGroundedRay} | Box: {isGroundedBox} | Final: {finalGrounded}");
+            Debug.Log($"GroundCheck Pos: {groundCheck.position} | Player Pos: {transform.position}");
+        }
         
         // MOVIMIENTO
         rb.linearVelocity = new Vector2(horizontal * moveSpeed, rb.linearVelocity.y);
@@ -79,16 +104,23 @@ public class PlayerController : MonoBehaviour
         // SALTO CON MÚLTIPLES VERIFICACIONES
         if (jumpPressed)
         {
-            Debug.Log("Space pressed!");
+            if (enableDebug) Debug.Log("Space pressed!");
             if (finalGrounded)
             {
-                Debug.Log("Jumping!");
+                if (enableDebug) Debug.Log("Jumping!");
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
             else
             {
-                Debug.Log($"Not grounded - Circle:{isGrounded}, Ray:{isGroundedRay}, Box:{isGroundedBox}");
+                if (enableDebug) Debug.Log($"Not grounded - Circle:{isGrounded}, Ray:{isGroundedRay}, Box:{isGroundedBox}");
             }
+        }
+        
+        // SISTEMA DE ATAQUE
+        if (attackPressed && Time.time >= lastAttackTime + attackCooldown)
+        {
+            Attack();
+            lastAttackTime = Time.time;
         }
         
         // ACTUALIZAR ANIMACIONES (usar finalGrounded)
@@ -101,6 +133,50 @@ public class PlayerController : MonoBehaviour
             Flip();
     }
     
+    void Attack()
+    {
+        if (projectilePrefab == null)
+        {
+            if (enableDebug) Debug.LogWarning("No projectile prefab assigned!");
+            return;
+        }
+        
+        // Determinar dirección del ataque
+        Vector2 attackDirection = facingRight ? Vector2.right : Vector2.left;
+        
+        // Crear proyectil
+        GameObject projectile = Instantiate(projectilePrefab, attackPoint.position, Quaternion.identity);
+        
+        // Configurar el proyectil
+        PlayerProjectile projectileScript = projectile.GetComponent<PlayerProjectile>();
+        if (projectileScript != null)
+        {
+            projectileScript.Initialize(attackDirection, projectileSpeed, projectileDamage, projectileLifetime);
+        }
+        else
+        {
+            // Si no tiene el script, aplicar velocidad directamente
+            Rigidbody2D projectileRb = projectile.GetComponent<Rigidbody2D>();
+            if (projectileRb != null)
+            {
+                projectileRb.linearVelocity = attackDirection * projectileSpeed;
+            }
+            
+            // Autodestruir después del lifetime
+            Destroy(projectile, projectileLifetime);
+        }
+        
+        // Rotar proyectil para que apunte en la dirección correcta
+        if (!facingRight)
+        {
+            Vector3 scale = projectile.transform.localScale;
+            scale.x *= -1;
+            projectile.transform.localScale = scale;
+        }
+        
+        if (enableDebug) Debug.Log($"Player attacked! Direction: {attackDirection}");
+    }
+    
     void UpdateAnimations(float horizontal, bool grounded)
     {
         if (animator != null)
@@ -111,6 +187,12 @@ public class PlayerController : MonoBehaviour
             
             // Pasar si está en el suelo (útil para animaciones de salto)
             animator.SetBool("IsGrounded", grounded);
+            
+            // Trigger de ataque (opcional)
+            if (Input.GetKeyDown(attackKey) && Time.time >= lastAttackTime + attackCooldown)
+            {
+                animator.SetTrigger("Attack");
+            }
         }
     }
     
@@ -130,6 +212,16 @@ public class PlayerController : MonoBehaviour
         {
             Gizmos.color = isGrounded ? Color.green : Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+        
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(attackPoint.position, 0.2f);
+            
+            // Mostrar dirección de ataque
+            Vector3 attackDir = facingRight ? Vector3.right : Vector3.left;
+            Gizmos.DrawRay(attackPoint.position, attackDir * 2f);
         }
     }
 }

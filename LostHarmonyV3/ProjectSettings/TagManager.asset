@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Wall
   - Enemy
+  - EnemyAttack
+  - ToxicSmoke
+  - Boss
+  - Ground
+  - Fireball
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
