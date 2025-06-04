@@ -6,7 +6,7 @@ public class SceneController : MonoBehaviour
     public static SceneController instance;
 
     [Header("UI Game Over")]
-    public GameObject gameOverUI; // arrastra el panel con botones
+    public GameObject gameOverUI;
     private bool isGameOver = false;
 
     void Awake()
@@ -26,14 +26,14 @@ public class SceneController : MonoBehaviour
         if (isGameOver) return;
 
         isGameOver = true;
-        Time.timeScale = 0f; // pausa el juego
+        //Time.timeScale = 0f; // pausa el juego
         if (gameOverUI != null)
             gameOverUI.SetActive(true);
     }
 
     public void RestartScene()
     {
-        Time.timeScale = 1f;
+       Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void OnEnable()
@@ -84,13 +84,14 @@ public class SceneController : MonoBehaviour
     }
 
 
-    public void QuitGame()
+    public void irAlMenu()
     {
-        Time.timeScale = 1f;
-        Application.Quit();
+        SceneManager.LoadScene("InicioDP");
+    }
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("Pasando al siguiente nivel");
     }
 }

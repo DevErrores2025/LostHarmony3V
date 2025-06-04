@@ -19,7 +19,7 @@ public class LevelControllerLH : MonoBehaviour
     [Header("Nombres de Escenas")]
     public string escenaMenuPrincipal = "MenuPrincipal";
     public string escenaNivel1 = "ScenesDP/Escena DP";
-    // public string escenaNivel2 = "Nivel2";
+    public string escenaNivel2 = "Alcantarillas";
     //public string escenaNivel3 = "Nivel3";
     //public string escenaNivel4 = "Nivel4";
 
@@ -41,7 +41,7 @@ public class LevelControllerLH : MonoBehaviour
     {
         // Configurar eventos de los botones de niveles
         if (buttonNivel1 != null) buttonNivel1.onClick.AddListener(() => CargarNivel(escenaNivel1));
-        //if (buttonNivel2 != null) buttonNivel2.onClick.AddListener(() => CargarNivel(escenaNivel2));
+        if (buttonNivel2 != null) buttonNivel2.onClick.AddListener(() => CargarNivel(escenaNivel2));
         //if (buttonNivel3 != null) buttonNivel3.onClick.AddListener(() => CargarNivel(escenaNivel3));
         //if (buttonNivel4 != null) buttonNivel4.onClick.AddListener(() => CargarNivel(escenaNivel4));
 
