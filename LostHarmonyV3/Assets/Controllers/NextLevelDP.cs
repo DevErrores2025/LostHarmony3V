@@ -24,7 +24,8 @@ public class NextLevelDP : MonoBehaviour
 
         // Configuraciones para la nueva escena
         Time.timeScale = 1f;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         Debug.Log("Nueva escena cargada y configurada");
     }

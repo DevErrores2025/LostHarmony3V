@@ -226,16 +226,16 @@ RectTransform:
   m_GameObject: {fileID: 678791208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.14999431, y: 0.14999431, z: 0.14999431}
+  m_LocalScale: {x: 0.2189917, y: 0.14999431, z: 0.14999431}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1093352137}
   m_Father: {fileID: 1488343991}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 317, y: -151}
-  m_SizeDelta: {x: 623.0724, y: 459.0081}
+  m_AnchorMin: {x: 0.7611866, y: 0}
+  m_AnchorMax: {x: 0.9121866, y: 0.18040836}
+  m_AnchoredPosition: {x: -3, y: 0.5}
+  m_SizeDelta: {x: 496.0724, y: 392.0081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678791210
 MonoBehaviour:
@@ -362,6 +362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f982dd0ee87144ba11f314515c32de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escenaSeleccionNiveles: NivelesLostH
+  escenaPrimerNivel: Escena DP
+  mostrarBotonesDebug: 1
 --- !u!114 &750438382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,10 +969,10 @@ RectTransform:
   - {fileID: 1182478852}
   m_Father: {fileID: 1488343991}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.36, y: 0.18318337}
-  m_AnchorMax: {x: 0.628, y: 0.36211252}
-  m_AnchoredPosition: {x: 12.642097, y: -5}
-  m_SizeDelta: {x: 768.6604, y: 292.5053}
+  m_AnchorMin: {x: 0.36, y: 0.16418338}
+  m_AnchorMax: {x: 0.6421866, y: 0.36211252}
+  m_AnchoredPosition: {x: 6.6420975, y: -1.5}
+  m_SizeDelta: {x: 756.6604, y: 285.5053}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579072896
 MonoBehaviour:

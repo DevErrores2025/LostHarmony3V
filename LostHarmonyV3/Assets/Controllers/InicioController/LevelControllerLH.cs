@@ -21,7 +21,7 @@ public class LevelControllerLH : MonoBehaviour
     public string escenaNivel1 = "Escena DP";
     public string escenaNivel2 = "MainCombat";
     public string escenaNivel3 = "Alcantarillas";
-    //public string escenaNivel4 = "Nivel4"; // Para futuro uso
+    public string escenaNivel4 = "Escenario_DrVikthor2"; // Para futuro uso
 
     private Button[] todosLosBotones;
 
@@ -43,7 +43,7 @@ public class LevelControllerLH : MonoBehaviour
         if (buttonNivel1 != null) buttonNivel1.onClick.AddListener(() => CargarNivel(escenaNivel1));
         if (buttonNivel2 != null) buttonNivel2.onClick.AddListener(() => CargarNivel(escenaNivel2));
         if (buttonNivel3 != null) buttonNivel3.onClick.AddListener(() => CargarNivel(escenaNivel3));
-        //if (buttonNivel4 != null) buttonNivel4.onClick.AddListener(() => CargarNivel(escenaNivel4));
+        if (buttonNivel4 != null) buttonNivel4.onClick.AddListener(() => CargarNivel(escenaNivel4));
 
         // Configurar botón atrás
         if (buttonAtras != null) buttonAtras.onClick.AddListener(VolverAlMenuPrincipal);
